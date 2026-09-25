@@ -1,6 +1,6 @@
 # ✸ Avaliações do Guia MASP
 
-> **Autora:** Fernanda Bastos (@codebyfernanda)
+> **Autora:** Fernanda Bastos [@codebyfernanda](https://github.com/codebyfernanda) |
 > **Data de Entrega Consolidada:** 25/09/2026
 
 Esta pasta reúne o código utilizado na campanha de testes e os resultados obtidos nas duas frentes de avaliação. Os dados já foram avaliados, contemplando **35 casos de** ***Golden Dataset*** (sete por categoria) e **15 ataques de** ***Red Teaming***, com a comparação das respostas antes (*baseline*) e depois (final) da correção do *prompt*.
