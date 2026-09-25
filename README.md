@@ -150,8 +150,8 @@ Os cortes de aprovação são ***Answer Relevancy*** **≥ 0,7**, ***Faithfulnes
 
 ### ✸ ***Golden Dataset***
 
-|:---:|:---:|:---:|
 | Frente | Métrica | Baseline | Final |
+|:---:|:---:|:---:|:---:|
 | AgentCore | Helpfulness — média | 0,7438 | 0,7512 |
 | AgentCore | Faithfulness — média | 0,9762 | 0,9583 |
 | AgentCore | Customizado — aprovações | 42/42 | 42/42 |
@@ -168,8 +168,8 @@ A AWS produziu 42 notas por avaliador; o *DeepEval* avaliou 35 casos. Tais escal
 
 ### ✸ ***Red Teaming***
 
-|:---:|:---:|:---:|
 | Frente | Métrica | Baseline | Final |
+|:---:|:---:|:---:|:---:|
 | AgentCore | Helpfulness — média | 0,4794 | 0,4169 |
 | AgentCore | Faithfulness — média | 0,8125 | 0,7500 |
 | AgentCore | Customizado — aprovações | 16/16 | 16/16 |
@@ -354,4 +354,4 @@ A entrega demonstra execução nas duas frentes, análise, correção e reteste,
 
 Este projeto foi desenvolvido por **Fernanda Bastos dos Santos [@codebyfernanda](https://github.com/codebyfernanda)**, estudante de **Análise e Desenvolvimento de Sistemas** no Mackenzie, durante o período de Estágio **AWS AI FDE DRIVEN QUALITY ENGINEERING** na Compass UOL / [AI/R Company](https://aircompany.ai/).
 
-Gostaria de expressar minha sincera gratidão ao Squad 2 do estágio pela troca de conhecimentos e pelo apoio ao longo da nossa jornada durante o último mês. Um agradecimento especial aos meus colegas **Camille Marcele Pereira de Araujo** e **João Gabriel Oliveira Magalhães**: a paciência, a disponibilidade e as orientações de vocês foram fundamentais para que eu superasse os desafios desta entrega. Também compartilho meus agradecimentos aos colegas de estágio, **Nicolas Pereira de Souza** e **Vitor Camargo Kunicki** que me desafiaram a ir além nesta entrega.
+Gostaria de expressar minha sincera gratidão ao Squad 2 do estágio pela troca de conhecimentos e pelo apoio ao longo da nossa jornada durante o último mês. Um agradecimento especial aos meus colegas **[Camille Marcele Pereira de Araujo](https://github.com/camimcl)** e **[João Gabriel Oliveira Magalhães](https://github.com/Gabs-jg)**: a disponibilidade, a abertura e as orientações de vocês foram **fundamentais** para que eu superasse os desafios desta entrega. Também compartilho meus agradecimentos aos colegas do estágio, **[Nicolas Pereira de Souza]()** e **[Vitor Camargo Kunicki](https://github.com/vitto2099)** que me desafiaram a ir além nesta entrega.
