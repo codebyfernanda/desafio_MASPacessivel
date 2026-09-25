@@ -18,13 +18,13 @@
 
 ## ✸ Sobre o projeto
 
-O **MASP Acessível** é um protótipo de guia sobre obras, visitação e acessibilidade, desenvolvido e avaliado como projeto de QA. O agente utiliza **Qwen3 Next 80B A3B no Amazon Bedrock AgentCore**, com uma ferramenta de consulta à base de conhecimento do museu.
+O **MASP Acessível** é um protótipo de guia por *chatbot* voltado para o atendimento de visitantes com deficiências que trata sobre obras, visitação e a acessibilidade disponível, desenvolvido e avaliado como projeto de **Integração entre AWS AgentCore Evaluations + DeepEval**. O agente utiliza **Gemma 3 4B IT** e **Qwen3 Next 80B A3B** no ***Amazon Bedrock AgentCore*** (Frente A) e no ***Deep Eval*** (Frente B) via ***Ollama***. A premissa central é oferecer uma ferramenta de consulta à base de conhecimento do **Museu de Arte de São Paulo Assis Chateaubriand (MASP)**.
 
-O objetivo foi verificar se o agente responde com clareza, sustenta suas informações em fontes e respeita os limites do domínio. Ele pode fornecer informações, mas não realiza pagamentos, reservas ou agendamentos.
+O objetivo foi verificar se o agente responde com clareza, sustenta as suas informações em fontes, como na base de conhecimento fornecida que utiliza obras reais do acervo, e respeita os limites do domínio. Ele pode fornecer informações, mas **não** realiza agendamentos, reservas, pagamentos ou demais consultas fora do escopo cultural / de acessibilidade.
 
-A campanha reúne **35 casos golden e 15 ataques de red teaming**, executados antes e depois de uma correção no prompt. As mesmas capturas foram avaliadas no **AgentCore Evaluations** e no **DeepEval**, permitindo comparar resultados sem trocar o agente entre as frentes.
+A seguinte campanha reúne **35 casos golden e 15 ataques de red teaming**, executados antes e depois de uma correção no *prompt*. As mesmas capturas foram avaliadas em duas frentes A e B (citadas anteriormente), pois elas permitem a comparação dos resultados sem trocar o agente entre elas.
 
-> **Situação do projeto:** campanha concluída, com evidências preservadas, melhorias e falhas remanescentes documentadas. O protótipo não é recomendado para uso público sem supervisão.
+> **Situação do projeto:** campanha concluída com evidências preservadas, melhorias e falhas remanescentes documentadas. O protótipo **NÃO** é recomendado para uso público sem supervisão.
 
 ## ✸ Por onde começar?
 
@@ -36,13 +36,13 @@ A campanha reúne **35 casos golden e 15 ataques de red teaming**, executados an
 
 ## ✸ O que este projeto demonstra
 
-**Consulta à fonte com evidência.** O caminho AgentCore → Gateway → Lambda → S3 registra a solicitação e o retorno da ferramenta. Uma referência escrita pelo agente não é tratada como prova de consulta.
+**Consulta à fonte com evidência:** O caminho AgentCore → Gateway → Lambda → S3 registra a solicitação e o retorno da ferramenta. Uma referência escrita pelo agente não é tratada como prova de consulta.
 
-**Comparação do mesmo agente em duas frentes.** O Qwen3 Next produz as respostas avaliadas. O DeepSeek-R1 atua como juiz local do DeepEval; os avaliadores integrados da AWS são gerenciados pelo serviço.
+**Comparação do mesmo agente em duas frentes:** O Qwen3 Next produz as respostas avaliadas. O DeepSeek-R1 atua como juiz local do DeepEval; os avaliadores integrados da AWS são gerenciados pelo serviço.
 
-**Rastreabilidade entre baseline e final.** Prompts, configurações, capturas, spans, notas e hashes permitem acompanhar as alterações. Apenas métricas com erro técnico foram recuperadas; reprovações válidas foram preservadas.
+**Rastreabilidade entre baseline VS. final:** Prompts, configurações, capturas, spans, notas e hashes permitem acompanhar as alterações. Apenas métricas com erro técnico foram recuperadas; reprovações válidas foram preservadas.
 
-**Análise dos limites da avaliação.** O projeto registra casos em que uma nota favorável coexistiu com resposta incorreta, além de distinguir falha do agente, erro do juiz e ausência de contexto.
+**Análise dos limites da avaliação:** O projeto registra casos em que uma nota favorável coexistiu com resposta incorreta, além de distinguir falha do agente, erro do juiz e ausência de contexto.
 
 ## ✸ Arquitetura do sistema
 
