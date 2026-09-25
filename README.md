@@ -11,6 +11,7 @@
 ![Juiz](https://img.shields.io/badge/Juiz%20local-DeepSeek--R1%20%7C%20Ollama-yellow)
 ![Red Teaming](https://img.shields.io/badge/Red%20Teaming-15%20ataques-red)
 ![Comparação](https://img.shields.io/badge/An%C3%A1lise-Baseline%20%C3%97%20Final-blue)
+<br>
 ![Riscos](https://img.shields.io/badge/Status-Falhas%20remanescentes%20documentadas-yellow)
 
 </div>
