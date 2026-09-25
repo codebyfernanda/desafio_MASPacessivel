@@ -1,5 +1,7 @@
 # MASP Acessível
 
+<div align="center">
+
 [![AWS AgentCore](https://img.shields.io/badge/AWS-AgentCore%20%7C%20sa--east--1-FBBC05)](https://aws.amazon.com/bedrock/agentcore/)
 ![Agente](https://img.shields.io/badge/Agente-Qwen3%20Next%2080B%20A3B-4285F4)
 ![Arquitetura](https://img.shields.io/badge/Arquitetura-AgentCore%20%2B%20Gateway%20%2B%20Lambda%20%2B%20S3-1967D2)
@@ -10,6 +12,8 @@
 ![Red Teaming](https://img.shields.io/badge/Red%20Teaming-15%20ataques-EA4335)
 ![Comparação](https://img.shields.io/badge/An%C3%A1lise-Baseline%20%C3%97%20Final-4285F4)
 ![Riscos](https://img.shields.io/badge/Status-Falhas%20remanescentes%20documentadas-C5221F)
+
+</div>
 
 Projeto de QA de Fernanda Bastos. Avaliação de um guia do MASP com **35 casos de teste e 15 ataques**, comparando a versão inicial e a versão corrigida nas duas frentes.
 
