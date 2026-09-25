@@ -1,0 +1,33 @@
+[
+  {
+    "id": "CT01",
+    "turnos": [
+      "Qual é o código de inventário da obra \"Retirantes\"?"
+    ]
+  },
+  {
+    "id": "CT02",
+    "turnos": [
+      "Qual a programação cultural do MASP?"
+    ]
+  },
+  {
+    "id": "CT03",
+    "turnos": [
+      "Quais símbolos aparecem em \"Pau-Brasil\"?"
+    ]
+  },
+  {
+    "id": "CT04",
+    "turnos": [
+      "O MASP abre às segundas-feiras?"
+    ]
+  },
+  {
+    "id": "CT05",
+    "turnos": [
+      "Quem criou \"Dead Man Walking\"?",
+      "O que a mulher está vestindo nela?"
+    ]
+  }
+]

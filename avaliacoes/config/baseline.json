@@ -1,0 +1,38 @@
+{
+  "harness_id": "guia_acessivel_MASP-z5GvkuqEu5",
+  "endpoint": "DEFAULT",
+  "region": "sa-east-1",
+  "account": "024687770728",
+  "prompt": "config/prompt_baseline.md",
+  "overrides": {
+    "model": {
+      "bedrockModelConfig": {
+        "modelId": "qwen.qwen3-next-80b-a3b-instruct",
+        "apiFormat": "chat_completions",
+        "maxTokens": 1024,
+        "temperature": 0.2
+      }
+    },
+    "tools": [
+      {
+        "type": "agentcore_gateway",
+        "name": "masp-rag",
+        "config": {
+          "agentCoreGateway": {
+            "gatewayArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:gateway/masp-rag-f0vkhsdstj",
+            "outboundAuth": {
+              "awsIam": {}
+            }
+          }
+        }
+      }
+    ],
+    "allowedTools": [
+      "@masp-rag/base-masp___RAG_MASP"
+    ],
+    "skills": [],
+    "maxIterations": 3,
+    "maxTokens": 24000,
+    "timeoutSeconds": 180
+  }
+}
