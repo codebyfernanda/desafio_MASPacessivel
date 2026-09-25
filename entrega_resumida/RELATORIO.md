@@ -1,5 +1,5 @@
 # ✸ MASP Acessível: Relatório Técnico Final – Desafio 2
-## Integração entre AWS AgentCore + DeepEval (MASP Acessível)
+**Integração entre *AWS AgentCore* + *DeepEval***
 
 > **Autora:** Fernanda Bastos [@codebyfernanda](https://github.com/codebyfernand) |
 > **Data de Entrega Consolidada:** 25/09/2026
