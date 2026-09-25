@@ -26,7 +26,11 @@
 
 ## ✸ Sobre o Projeto
 
-*“Como será que a tecnologia pode ajudar pessoas com deficiência a terem um acesso mais adequado à cultura?”*. A partir deste questionamento, pude “desenhar” o escopo do desafio:
+<div align="center">
+### *“Como será que a tecnologia pode ajudar pessoas com deficiência a terem um acesso mais adequado à cultura?”*. 
+</div>
+
+A partir deste questionamento, pude “desenhar” o escopo do desafio descrito abaixo:
 
 O **MASP Acessível** é um protótipo de guia por *chatbot* voltado para o atendimento de visitantes com deficiências que trata sobre obras, visitação e a acessibilidade disponível, desenvolvido e avaliado como projeto de **Integração entre AWS AgentCore Evaluations + DeepEval**. O agente utiliza **Gemma 3 4B IT** e **Qwen3 Next 80B A3B** no ***Amazon Bedrock AgentCore*** (Frente A) e no ***Deep Eval*** (Frente B) via ***Ollama***. A premissa central é oferecer uma ferramenta de consulta à base de conhecimento do **Museu de Arte de São Paulo Assis Chateaubriand (MASP)**. 
 
