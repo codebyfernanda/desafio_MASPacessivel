@@ -354,7 +354,7 @@ A entrega demonstra execução nas duas frentes, análise, correção e reteste,
 
 ## ✸ Autoria & Agradecimentos
 
-Este projeto foi desenvolvido por **Fernanda Bastos dos Santos [@codebyfernanda](https://github.com/codebyfernanda)**, estudante de **Análise e Desenvolvimento de Sistemas** no Mackenzie, durante o período de Estágio **AWS AI FDE DRIVEN QUALITY ENGINEERING** na Compass UOL / [AI/R Company](https://aircompany.ai/).
+Este projeto foi desenvolvido por **Fernanda Bastos dos Santos [@codebyfernanda](https://github.com/codebyfernanda)**, estudante de **Análise e Desenvolvimento de Sistemas** no Mackenzie, durante o **ESTÁGIO | AWS AI FDE DRIVEN QUALITY ENGINEERING** na Compass UOL / [AI/R Company](https://aircompany.ai/).
 
 Gostaria de expressar minha sincera gratidão ao Squad 2 do estágio pela troca de conhecimentos e pelo apoio ao longo da nossa jornada durante o último mês. Um agradecimento especial aos meus colegas **[Camille Marcele Pereira de Araujo](https://github.com/camimcl)** e **[João Gabriel Oliveira Magalhães](https://github.com/Gabs-jg)**: a disponibilidade, a abertura e as orientações de vocês foram **fundamentais** para que eu superasse os desafios desta entrega. 
 
