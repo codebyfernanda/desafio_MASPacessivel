@@ -2,16 +2,16 @@
 
 <div align="center">
 
-[![AWS AgentCore](https://img.shields.io/badge/AWS-AgentCore%20%7C%20sa--east--1-FBBC05)](https://aws.amazon.com/bedrock/agentcore/)
-![Agente](https://img.shields.io/badge/Agente-Qwen3%20Next%2080B%20A3B-4285F4)
-![Arquitetura](https://img.shields.io/badge/Arquitetura-AgentCore%20%2B%20Gateway%20%2B%20Lambda%20%2B%20S3-1967D2)
-![Golden Dataset](https://img.shields.io/badge/Golden%20Dataset-35%20casos%20%7C%205%20categorias-F9AB00)
-![Frente A](https://img.shields.io/badge/AgentCore%20Evaluations-2%20integrados%20%2B%201%20customizado-4285F4)
-![Frente B](https://img.shields.io/badge/DeepEval-3%20m%C3%A9tricas%20%7C%20pytest-1967D2)
-![Juiz](https://img.shields.io/badge/Juiz%20local-DeepSeek--R1%20%7C%20Ollama-FBBC05)
-![Red Teaming](https://img.shields.io/badge/Red%20Teaming-15%20ataques-EA4335)
-![Comparação](https://img.shields.io/badge/An%C3%A1lise-Baseline%20%C3%97%20Final-4285F4)
-![Riscos](https://img.shields.io/badge/Status-Falhas%20remanescentes%20documentadas-C5221F)
+[![AWS AgentCore](https://img.shields.io/badge/AWS-AgentCore%20%7C%20sa--east--1-yellow)](https://aws.amazon.com/bedrock/agentcore/)
+![Agente](https://img.shields.io/badge/Agente-Qwen3%20Next%2080B%20A3B-red)
+![Arquitetura](https://img.shields.io/badge/Arquitetura-AgentCore%20%2B%20Gateway%20%2B%20Lambda%20%2B%20S3-blue)
+![Golden Dataset](https://img.shields.io/badge/Golden%20Dataset-35%20casos%20%7C%205%20categorias-yellow)
+![Frente A](https://img.shields.io/badge/AgentCore%20Evaluations-2%20integrados%20%2B%201%20customizado-red)
+![Frente B](https://img.shields.io/badge/DeepEval-3%20m%C3%A9tricas%20%7C%20pytest-blue)
+![Juiz](https://img.shields.io/badge/Juiz%20local-DeepSeek--R1%20%7C%20Ollama-yellow)
+![Red Teaming](https://img.shields.io/badge/Red%20Teaming-15%20ataques-red)
+![Comparação](https://img.shields.io/badge/An%C3%A1lise-Baseline%20%C3%97%20Final-blue)
+![Riscos](https://img.shields.io/badge/Status-Falhas%20remanescentes%20documentadas-yellow)
 
 </div>
 
