@@ -125,7 +125,7 @@ $env:DEEPEVAL_RETRY_MAX_ATTEMPTS = "1"
 
 ## Autoria
 
-Este projeto foi desenvolvido por **Fernanda Bastos dos Santos** ([@codebyfernanda](https://github.com/codebyfernanda?utm_source=gemini)), estudante de Análise e Desenvolvimento de Sistemas no Mackenzie, durante o **ESTÁGIO | AWS AI FDE DRIVEN QUALITY ENGINEERING**, realizado pela Compass UOL em parceria com a [AI/R Company](https://aircompany.ai/pt/home/).
+Este projeto foi desenvolvido por **Fernanda Bastos dos Santos** ([@codebyfernanda](https://github.com/codebyfernanda?utm_source=gemini)), estudante de Análise e Desenvolvimento de Sistemas no Mackenzie, durante o **ESTÁGIO | AWS AI FDE DRIVEN QUALITY ENGINEERING** na Compass UOL / [AI/R Company](https://aircompany.ai/pt/home/).
 
 ```
 
