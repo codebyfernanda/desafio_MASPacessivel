@@ -17,12 +17,12 @@
 </div>
 
 ---
+
 <div align="center">
     
 > **STATUS:** campanha concluída com evidências preservadas, melhorias e falhas remanescentes documentadas. O protótipo **NÃO** é recomendado para uso público sem supervisão.
 
 </div>
----
 
 ## ✸ Sobre o Projeto
 
