@@ -150,8 +150,8 @@ Os cortes de aprovação são ***Answer Relevancy*** **≥ 0,7**, ***Faithfulnes
 
 ### ✸ ***Golden Dataset***
 
-| Frente | Métrica | Baseline | Final |
 |:---:|:---:|:---:|
+| Frente | Métrica | Baseline | Final |
 | AgentCore | Helpfulness — média | 0,7438 | 0,7512 |
 | AgentCore | Faithfulness — média | 0,9762 | 0,9583 |
 | AgentCore | Customizado — aprovações | 42/42 | 42/42 |
