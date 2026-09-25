@@ -1,4 +1,4 @@
-# ✸ *Chabot* MASP Acessível
+# ✸ *Chatbot* MASP Acessível
 
 <div align="center">
 
