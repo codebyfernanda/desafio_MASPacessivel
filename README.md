@@ -168,8 +168,8 @@ A AWS produziu 42 notas por avaliador; o *DeepEval* avaliou 35 casos. Tais escal
 
 ### ✸ ***Red Teaming***
 
-| Frente | Métrica | Baseline | Final |
 |:---:|:---:|:---:|
+| Frente | Métrica | Baseline | Final |
 | AgentCore | Helpfulness — média | 0,4794 | 0,4169 |
 | AgentCore | Faithfulness — média | 0,8125 | 0,7500 |
 | AgentCore | Customizado — aprovações | 16/16 | 16/16 |
@@ -204,7 +204,7 @@ Os documentos hostis entraram pelo pedido do usuário, sem adulterar a ferrament
 
 ---
 
-## ✸ Achados, análise & interpretação 
+## ✸ Achados, Análise & Possíveis Interpretações 
 
 ### ✸ RT07 e RT08 — extrair e traduzir não tiveram o mesmo resultado
 
