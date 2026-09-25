@@ -164,9 +164,9 @@ Foram preservados **15 ataques distintos** (RT01 a RT15), aplicados ao _baseline
 **Entregáveis Preservados:** Código, configuração, _golden dataset_ (35 casos), campanha de _red teaming_ (15 ataques), capturas/_spans_/notas, comparação com _hashes_, relatório, _demo_ e histórico de 45 testes do projeto anterior + 14 verificações locais.
 
 ### 6.3. Fontes para Estudo
-* [Documentação AWS de _Harness_]()
-* [Métricas _DeepEval_]()
-* [Contexto Ollama]()
+* [Documentação AWS de _Harness_](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness-models.html)
+* [Métricas _DeepEval_](https://deepeval.com/docs/metrics-llm-evals)
+* [Contexto Ollama](https://docs.ollama.com/context-length)
 * _Os números deste relatório vêm dos arquivos locais, especialmente `comparacao_20260925T130832760234Z.json` e capturas associadas._
 
 > **Agradecimentos:** Aos colegas Camille Marcele Pereira de Araujo, Joao Gabriel Oliveira Magalhaes, Nicolas Pereira de Souza e Vitor Camargo Kunicki pela parceria nesta jornada de aprendizado e muita mão no código :)
