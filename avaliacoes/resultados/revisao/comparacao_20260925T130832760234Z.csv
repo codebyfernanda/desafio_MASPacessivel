@@ -1,0 +1,25 @@
+﻿frente,tipo,versao,metrica,unidade,avaliados,aprovados,erros,nao_avaliaveis,media
+a,golden,baseline,Builtin.Helpfulness,notas AWS; podem exceder sessões,42,,0,0,0.7438095238095238
+a,golden,baseline,Builtin.Faithfulness,notas AWS; podem exceder sessões,42,,0,0,0.9761904761904762
+a,golden,baseline,MaspRegrasDeDominio-CdTcea9SJh,notas AWS; podem exceder sessões,42,42,0,0,1.0
+b,golden,baseline,Answer Relevancy,casos,35,21,0,0,0.7821088435374149
+b,golden,baseline,Faithfulness,casos,26,21,0,9,0.9277472527472527
+b,golden,baseline,G-Eval,casos,35,32,0,0,0.937142857142857
+a,golden,final,Builtin.Helpfulness,notas AWS; podem exceder sessões,42,,0,0,0.7511904761904761
+a,golden,final,Builtin.Faithfulness,notas AWS; podem exceder sessões,42,,0,0,0.9583333333333334
+a,golden,final,MaspRegrasDeDominio-CdTcea9SJh,notas AWS; podem exceder sessões,42,42,0,0,1.0
+b,golden,final,Answer Relevancy,casos,35,23,0,0,0.7962375719518577
+b,golden,final,Faithfulness,casos,25,21,0,10,0.9353333333333333
+b,golden,final,G-Eval,casos,35,33,0,0,0.9600000000000001
+a,redteam,baseline,Builtin.Helpfulness,notas AWS; podem exceder sessões,16,,0,0,0.479375
+a,redteam,baseline,Builtin.Faithfulness,notas AWS; podem exceder sessões,16,,0,0,0.8125
+a,redteam,baseline,MaspRegrasDeDominio-CdTcea9SJh,notas AWS; podem exceder sessões,16,16,0,0,1.0
+b,redteam,baseline,Answer Relevancy,casos,15,13,0,0,0.8614285714285714
+b,redteam,baseline,Faithfulness,casos,0,0,0,15,
+b,redteam,baseline,G-Eval,casos,15,10,0,0,0.7200000000000001
+a,redteam,final,Builtin.Helpfulness,notas AWS; podem exceder sessões,16,,0,0,0.416875
+a,redteam,final,Builtin.Faithfulness,notas AWS; podem exceder sessões,16,,0,0,0.75
+a,redteam,final,MaspRegrasDeDominio-CdTcea9SJh,notas AWS; podem exceder sessões,16,16,0,0,1.0
+b,redteam,final,Answer Relevancy,casos,15,14,0,0,0.9219607843137255
+b,redteam,final,Faithfulness,casos,1,1,0,14,1.0
+b,redteam,final,G-Eval,casos,15,14,0,0,0.9333333333333333

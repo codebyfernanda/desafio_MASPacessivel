@@ -1,0 +1,18 @@
+{
+  "estado": "spans do piloto conferidos; baseline ainda não executado nesta revisão",
+  "captura_sha256": "289dcb33536fc5cc94fb567fb94c1952200ae572d81cb4f30ebef4affd8f6f32",
+  "spans_sha256": "26fb29979c7626a53e56373cd63d13001928a1c4715c795bae58ccd0a92659f0",
+  "sessoes": 5,
+  "spans": 51,
+  "modelo_observado": "qwen.qwen3-next-80b-a3b-instruct",
+  "operacoes_rag_observadas": [
+    "execute_tool base-masp___RAG_MASP",
+    "mcp tools/call base-masp___RAG_MASP"
+  ],
+  "limites": [
+    "Não é avaliação pelos juízes.",
+    "P04 conserva ressalva sobre afirmação/referência sem consulta.",
+    "Orçamento continua sujeito a consumo e atualização da cobrança.",
+    "Conferir janela do DeepSeek antes da frente B."
+  ]
+}

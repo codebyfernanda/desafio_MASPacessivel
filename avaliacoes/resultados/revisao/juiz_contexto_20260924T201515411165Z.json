@@ -1,0 +1,31 @@
+{
+  "data_utc": "2026-09-24T20:15:15.411165+00:00",
+  "opcoes_solicitadas": {
+    "num_predict": 4096,
+    "num_ctx": 16384,
+    "temperature": 0.2
+  },
+  "digests": {
+    "deepseek-r1:latest": "6995872bfe4c521a67b32da386cd21d5c6e819b6e0d62f79f64ec83be99f5763"
+  },
+  "modelo_carregado": {
+    "model": "deepseek-r1:latest",
+    "name": "deepseek-r1:latest",
+    "digest": "6995872bfe4c521a67b32da386cd21d5c6e819b6e0d62f79f64ec83be99f5763",
+    "expires_at": "2026-09-24T17:25:15.399549-03:00",
+    "size": 7812111399,
+    "size_vram": 4235177492,
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "8.2B",
+      "quantization_level": "Q4_K_M"
+    },
+    "context_length": 16384
+  },
+  "limite": "Verifica carregamento; não avalia respostas nem garante que todo prompt caiba."
+}

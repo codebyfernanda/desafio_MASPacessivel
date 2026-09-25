@@ -1,0 +1,7 @@
+{
+  "timeout_metrica": 1200,
+  "tentativas_deepeval": 1,
+  "codigo_executor_sha256": "5b0e919f9ff885799d2370afe5899b1fdd593b71a27cadf2bfab6fdd42cb4e80",
+  "tipo": "golden",
+  "versao": "final"
+}

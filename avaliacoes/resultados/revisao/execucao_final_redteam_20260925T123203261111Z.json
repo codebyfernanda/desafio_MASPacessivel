@@ -1,0 +1,7 @@
+{
+  "timeout_metrica": 1200,
+  "tentativas_deepeval": 1,
+  "codigo_executor_sha256": "94b4fabdbb73b7e9e3e17e10879f4e6a0198c51af2d26be6be5a962b48347a25",
+  "tipo": "redteam",
+  "versao": "final"
+}
