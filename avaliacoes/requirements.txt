@@ -1,0 +1,11 @@
+requests==2.34.2
+deepeval==4.2.3
+ollama==0.6.2
+pytest==9.1.1
+httpx==0.28.1
+
+# Acesso AWS via Boto3 e credenciais de aws login
+boto3[crt]==1.43.100
+
+# Escrita dos registros do DeepEval com locks compartilhados no Windows.
+pywin32; sys_platform == 'win32'
