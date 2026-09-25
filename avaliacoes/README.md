@@ -1,76 +1,137 @@
-# Avaliações do guia MASP
+# ✸ Avaliações do Guia MASP
 
-Esta pasta reúne o código usado na campanha e os resultados das duas frentes. Os dados já foram avaliados: 35 casos golden e 15 ataques, antes e depois da correção do prompt.
+<div align="center">
 
-## Arquivos principais
+[![AWS AgentCore](https://img.shields.io/badge/AWS-AgentCore%20%7C%20sa--east--1-yellow)](https://aws.amazon.com/bedrock/agentcore/)
+![Agente](https://img.shields.io/badge/Agente-Qwen3%20Next%2080B%20A3B-red)
+![Arquitetura](https://img.shields.io/badge/Arquitetura-AgentCore%20%2B%20Gateway%20%2B%20Lambda%20%2B%20S3-blue)
+![Golden Dataset](https://img.shields.io/badge/Golden%20Dataset-35%20casos%20%7C%205%20categorias-yellow)
+![Frente A](https://img.shields.io/badge/AgentCore%20Evaluations-2%20integrados%20%2B%201%20customizado-red)
+![Frente B](https://img.shields.io/badge/DeepEval-3%20m%C3%A9tricas%20%7C%20pytest-blue)
+![Juiz](https://img.shields.io/badge/Juiz%20local-DeepSeek--R1%20%7C%20Ollama-yellow)
+![Red Teaming](https://img.shields.io/badge/Red%20Teaming-15%20ataques-red)
+![Comparação](https://img.shields.io/badge/An%C3%A1lise-Baseline%20%C3%97%20Final-blue)
+![Riscos](https://img.shields.io/badge/Status-Falhas%20remanescentes%20documentadas-yellow)
 
-| Arquivo ou pasta | Uso |
-|---|---|
-| config/prompt_baseline.md e prompt_final.md | Instruções do agente em cada versão |
-| config/baseline.json e final.json | Modelo, ferramenta e limites |
-| dados/golden_dataset.json | 35 casos, sete por categoria |
-| dados/redteam/ataques.json | 15 tentativas de ataque |
-| dados/base_conhecimento_manifesto.json | Registro da base utilizada |
-| campanha.py | Captura respostas, exporta spans e chama os avaliadores AWS |
-| src/agent_core/lambda_avaliador.py | Regras do avaliador customizado |
-| test_qwen.py e avaliacao.py | Suíte DeepEval sobre as capturas |
-| src/deepeval/juiz.py | Adaptação do DeepSeek-R1 local |
-| recuperar_deepeval.py | Recuperação apenas de avaliações com timeout |
-| comparar.py | Consolidação dos resultados das duas frentes |
+</div>
 
-## Como ler os resultados
+Esta pasta reúne o código utilizado na campanha de testes e os resultados obtidos nas duas frentes de avaliação. Os dados já foram avaliados, contemplando **35 casos de** ***Golden Dataset*** (sete por categoria) e **15 ataques de** ***Red Teaming***, com a comparação das respostas antes (*baseline*) e depois (final) da correção do *prompt*.
 
-Na **frente A**, `golden_baseline.json` e arquivos equivalentes guardam perguntas, respostas, sessões e eventos. `spans_*.json` contém os rastros exportados da AWS. `avaliacao_*.json` contém notas e justificativas dos avaliadores.
+---
 
-Na **frente B**, a comparação usa `golden_baseline_recuperacao.json`, `golden_final_recuperacao.json`, `redteam_baseline.json` e `redteam_final.json`. Os arquivos originais do golden ficaram preservados porque houve timeouts. Só as métricas com erro foram repetidas; notas válidas, inclusive reprovações, não foram refeitas.
+## ✸ Estrutura de Arquivos
 
-Os JSONL são a gravação incremental de cada rodada. Não os apague: eles permitem conferir o que estava salvo antes de uma interrupção.
+| Arquivo / Pasta | Uso |
+|:---:|:---:|
+| `config/prompt_baseline.md` e `prompt_final.md` | Instruções do agente em cada versão. |
+| `config/baseline.json` e `final.json` | Configurações de modelo, ferramentas e limites da API. |
+| `dados/golden_dataset.json` | 35 casos de teste validados (golden), separados por categoria. |
+| `dados/redteam/ataques.json` | 15 tentativas estruturadas de ataque. |
+| `dados/base_conhecimento_manifesto.json` | Registro e manifesto da base de conhecimento utilizada. |
+| `campanha.py` | Script principal para capturar respostas, exportar rastros (spans) e acionar avaliadores da AWS. |
+| `src/agent_core/lambda_avaliador.py` | Regras do avaliador customizado rodando em função Lambda. |
+| `test_qwen.py` e `avaliacao.py` | Suíte do DeepEval executada sobre as capturas. |
+| `src/deepeval/juiz.py` | Adaptação para o uso do modelo local (DeepSeek-R1). |
+| `recuperar_deepeval.py` | Utilitário para reavaliar apenas itens que sofreram timeout no DeepEval. |
+| `comparar.py` | Utilitário para consolidação dos resultados de ambas as frentes. |
 
-A comparação está em `resultados/revisao/comparacao_20260925T130832760234Z.csv` e no JSON de mesmo nome. A tabela completa de achados fica em `../entrega_resumida/RED_TEAMING_15.csv`.
+---
 
-## Ambiente e execução
+## ✸ Como Ler os Resultados
 
-Abra o terminal **nesta pasta**, depois de extrair o ZIP. O ambiente virtual não acompanha a entrega.
+### ✸ Frente A (***AWS AgentCore Evaluations***)
+* **Capturas:** Arquivos como `golden_baseline.json` armazenam as perguntas, respostas do modelo, sessões e eventos.
+* **Rastros:** Os arquivos `spans_*.json` contêm a árvore de execução exportada da AWS.
+* **Avaliações:** Os arquivos `avaliacao_*.json` detalham as notas e justificativas dadas pelos avaliadores.
+
+### ✸ Frente B (***DeepEval*** local)
+* A comparação consolidada utiliza os arquivos de recuperação e de ataques: `golden_baseline_recuperacao.json`, `golden_final_recuperacao.json`, `redteam_baseline.json` e `redteam_final.json`.
+* **Tratamento de timeouts:** Os arquivos originais do conjunto golden foram preservados intactos após falhas de tempo limite. Somente as métricas com erro (timeout) foram repetidas. Notas válidas anteriores, incluindo reprovações, não foram refeitas.
+* **Histórico de Execução:** Os arquivos `.jsonl` formam o log de gravação incremental de cada rodada. **Não os apague**, pois eles permitem restaurar o progresso em caso de interrupção.
+
+### ✸ Relatórios Finais
+* A comparação das frentes encontra-se em `resultados/revisao/comparacao_20260925T130832760234Z.csv` (e no arquivo `.json` de mesmo nome).
+* A tabela completa com os achados de segurança e vulnerabilidades fica em `../entrega_resumida/RED_TEAMING_15.csv`.
+
+---
+
+## ✸ Ambiente & Execução
+
+O ambiente virtual do Python não acompanha esta entrega e deve ser criado localmente. Abra o terminal na raiz desta pasta extraída e execute:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
 ```
 
-Para verificar o código, sem chamar AWS ou juiz:
+### ✸ Comandos de Validação Rápida
+
+Para validar os *scripts* sem chamar a AWS ou instigar os juízes LLM (não gera custos):
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest tests -q
+
 ```
 
-Para gerar outra comparação a partir dos arquivos salvos, sem novas avaliações:
+Para regerar os arquivos de comparação a partir das execuções já salvas:
 
 ```powershell
 .\.venv\Scripts\python.exe comparar.py
+
 ```
 
-As etapas abaixo documentam a execução da campanha. Os arquivos encerrados são protegidos contra sobrescrita; não apague os resultados para refazer uma rodada.
+### Execução da Campanha (Frente A)
+
+Os arquivos resultantes já encerrados estão protegidos contra sobrescrita acidental. Para realizar uma rodada inédita (após alterar arquivos base ou de configuração), a sequência é:
 
 ```powershell
 .\.venv\Scripts\python.exe campanha.py capturar golden baseline
 .\.venv\Scripts\python.exe campanha.py spans golden baseline
 .\.venv\Scripts\python.exe campanha.py avaliar-a golden baseline
+
 ```
 
-Para o DeepEval, o comando usado foi:
+> **Nota de Infraestrutura:** As chamadas à AWS dependem de credenciais válidas e de recursos já instanciados na conta mapeada em `config/`. O pacote não cria esses recursos dinamicamente, e as execuções podem incorrer em cobranças. Comandos de setup anteriores constam em `documentacao_anterior_qwen/LEIA_PRIMEIRO.md`.
+
+### Execução da Suíte ***DeepEval*** (Frente B)
+
+O DeepEval usa o Ollama local com o juiz LLM. A configuração é feita por variáveis de ambiente. **Aviso:** Não altere a versão do modelo no Ollama durante uma bateria de testes, para não invalidar o comparativo do juiz.
 
 ```powershell
 $env:MASP_QWEN_TIPO = "golden"
 $env:MASP_QWEN_VERSAO = "baseline"
 $env:DEEPEVAL_PER_TASK_TIMEOUT_SECONDS_OVERRIDE = "1200"
 $env:DEEPEVAL_RETRY_MAX_ATTEMPTS = "1"
+
 .\.venv\Scripts\deepeval.exe test run test_qwen.py -v
+
 ```
 
-`TIPO` aceita `golden` ou `redteam`; `VERSAO`, `baseline` ou `final`. A execução depende do Ollama com o digest do juiz registrado nos logs. Não atualize o modelo no meio da comparação. Para uma rodada parcial, a retomada usa `MASP_QWEN_RETOMAR=1`; ela não altera notas já registradas. Timeouts encerrados têm recuperação separada, com `recuperar_deepeval.py golden baseline` ou `golden final`.
+* `$env:MASP_QWEN_TIPO` aceita `golden` ou `redteam`.
+* `$env:MASP_QWEN_VERSAO` aceita `baseline` ou `final`.
+* **Retomada:** Em caso de queda, defina `$env:MASP_QWEN_RETOMAR=1` antes de reexecutar. Isso fará o script pular itens com nota já salva.
+* **Recuperação manual:** Para timeouts isolados, use `.\.venv\Scripts\python.exe recuperar_deepeval.py golden baseline` ou `final`.
 
-As capturas AWS precisam de login válido no perfil e acesso aos recursos configurados em `config/`. Esses recursos pertencem à conta usada no projeto; o pacote não os cria em outra conta. Novas capturas e avaliações AWS podem gerar cobrança. Os comandos completos de preparação estão preservados no histórico, em `documentacao_anterior_qwen/LEIA_PRIMEIRO.md`.
+---
 
-## Limites que importam na leitura
+## Interpretação de Limites na Avaliação
 
-Faithfulness sem contexto recuperado fica **não avaliável**. Aprovado em uma métrica não significa seguro. Os resultados de red teaming precisam ser lidos junto das respostas e da severidade. Os quinze ataques finais foram avaliados; a conclusão do projeto está no relatório, não apenas na taxa mostrada pelo terminal.
+1. **Dependência de Contexto:** A métrica de *Faithfulness* (Fidelidade) restará "Não Avaliável" caso o modelo-base responda sem ter recuperado nenhum contexto da base de dados indexada.
+2. **Taxa de Aprovação:** O fato de uma resposta ser aprovada matematicamente em uma métrica automatizada não garante que o prompt seja absolutamente seguro contra ataques de prompt injection ou jailbreak.
+3. **Análise de Red Teaming:** Os resultados e aprovações da etapa de red teaming (15 ataques) exigem validação qualitativa das respostas e de sua severidade. A conclusão final do projeto baseia-se na avaliação descrita no relatório PDF anexo, e não unicamente na taxa de sucesso registrada pelo terminal.
+
+---
+
+## Autoria
+
+Este projeto foi desenvolvido por **Fernanda Bastos dos Santos** ([@codebyfernanda](https://github.com/codebyfernanda?utm_source=gemini)), estudante de Análise e Desenvolvimento de Sistemas no Mackenzie, durante o **ESTÁGIO | AWS AI FDE DRIVEN QUALITY ENGINEERING**, realizado pela Compass UOL em parceria com a [AI/R Company](https://aircompany.ai/pt/home/).
+
+```
+
+<ElicitationsGroup message="O código markdown já está completo. Quer adicionar mais alguma coisa?">
+  <Elicitation label="Criar índice (Sumário)" query="Como eu crio um sumário (Table of Contents) no início deste README para facilitar a navegação?"/>
+  <Elicitation label="Revisar texto para o LinkedIn" query="Me ajude a escrever um post para o LinkedIn apresentando este projeto do bootcamp."/>
+</ElicitationsGroup>
+
+```
