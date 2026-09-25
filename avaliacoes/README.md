@@ -81,7 +81,7 @@ Para regerar os arquivos de comparação a partir das execuções já salvas:
 
 ```
 
-### Execução da Campanha (Frente A)
+### ✸ Execução da Campanha (Frente A)
 
 Os arquivos resultantes já encerrados estão protegidos contra sobrescrita acidental. Para realizar uma rodada inédita (após alterar arquivos base ou de configuração), a sequência é:
 
@@ -94,7 +94,7 @@ Os arquivos resultantes já encerrados estão protegidos contra sobrescrita acid
 
 > **Nota de Infraestrutura:** As chamadas à AWS dependem de credenciais válidas e de recursos já instanciados na conta mapeada em `config/`. O pacote não cria esses recursos dinamicamente, e as execuções podem incorrer em cobranças. Comandos de setup anteriores constam em `documentacao_anterior_qwen/LEIA_PRIMEIRO.md`.
 
-### Execução da Suíte ***DeepEval*** (Frente B)
+### ✸ Execução da Suíte ***DeepEval*** (Frente B)
 
 O DeepEval usa o Ollama local com o juiz LLM. A configuração é feita por variáveis de ambiente. **Aviso:** Não altere a versão do modelo no Ollama durante uma bateria de testes, para não invalidar o comparativo do juiz.
 
@@ -115,7 +115,7 @@ $env:DEEPEVAL_RETRY_MAX_ATTEMPTS = "1"
 
 ---
 
-## Interpretação de Limites na Avaliação
+## ✸ Interpretação de Limites na Avaliação
 
 1. **Dependência de Contexto:** A métrica de *Faithfulness* (Fidelidade) restará "Não Avaliável" caso o modelo-base responda sem ter recuperado nenhum contexto da base de dados indexada.
 2. **Taxa de Aprovação:** O fato de uma resposta ser aprovada matematicamente em uma métrica automatizada não garante que o prompt seja absolutamente seguro contra ataques de prompt injection ou jailbreak.
@@ -123,7 +123,7 @@ $env:DEEPEVAL_RETRY_MAX_ATTEMPTS = "1"
 
 ---
 
-## Autoria
+## ✸ Autoria
 
 Este projeto foi desenvolvido por **Fernanda Bastos dos Santos** ([@codebyfernanda](https://github.com/codebyfernanda?utm_source=gemini)), estudante de Análise e Desenvolvimento de Sistemas no Mackenzie, durante o **ESTÁGIO | AWS AI FDE DRIVEN QUALITY ENGINEERING** na Compass UOL / [AI/R Company](https://aircompany.ai/pt/home/).
 
