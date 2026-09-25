@@ -1,0 +1,4303 @@
+{
+  "versao": "baseline",
+  "region": "sa-east-1",
+  "origem_spans": "C:\\Users\\ferna\\Documents\\Codex\\2026-09-20\\es\\outputs\\MASP - Campanha Qwen\\resultados\\frente_a\\spans_golden_baseline.json",
+  "spans_sha256": "11bf09cb6eae10bfe4f576c5c1d85d2a3baf6269ee511373fdfb36213293f562",
+  "avaliadores": [
+    "Builtin.Helpfulness",
+    "Builtin.Faithfulness",
+    "MaspRegrasDeDominio-CdTcea9SJh"
+  ],
+  "customizado_pendente": false,
+  "integrados_nesta_execucao": true,
+  "sessoes_previstas": 35,
+  "inicio": "2026-09-24T19:56:45.894849+00:00",
+  "status": "finalizado",
+  "resultados": [
+    {
+      "sessionId": "15c5f0fd-e88f-4fec-8096-9c6cd6a52551",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "e0124db3-d65f-4822-9a01-0c6fc90e5dba",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:56:55 GMT",
+            "content-type": "application/json",
+            "content-length": "867",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "e0124db3-d65f-4822-9a01-0c6fc90e5dba"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to find out the days when entry to MASP is free. The assistant's response directly addresses this by providing the specific days and times when entry is free (Tuesdays from 10h to 20h and Fridays from 18h to 21h). This information is clear, concise, and directly relevant to the user's query, moving them closer to achieving their goal. The inclusion of a reference adds credibility but does not detract from the helpfulness.",
+            "context": {
+              "spanContext": {
+                "sessionId": "15c5f0fd-e88f-4fec-8096-9c6cd6a52551",
+                "traceId": "6ab57e8f5908e5ee06a5fe7131263558"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8368,
+              "outputTokens": 125,
+              "totalTokens": 8493
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "15c5f0fd-e88f-4fec-8096-9c6cd6a52551",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "061901dd-b9ae-4e11-9c51-56bd1bdafa42",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:56:58 GMT",
+            "content-type": "application/json",
+            "content-length": "889",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "061901dd-b9ae-4e11-9c51-56bd1bdafa42"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response states that the MASP offers free entry on Tuesdays from 10 AM to 8 PM and on Fridays from 6 PM to 9 PM. This information is directly sourced from the tool output, which explicitly mentions these days and times for free entry. There is no contradiction or additional information in the assistant's response that conflicts with the conversation history or the tool output. Therefore, the response is entirely faithful to the provided data.",
+            "context": {
+              "spanContext": {
+                "sessionId": "15c5f0fd-e88f-4fec-8096-9c6cd6a52551",
+                "traceId": "6ab57e8f5908e5ee06a5fe7131263558"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8223,
+              "outputTokens": 114,
+              "totalTokens": 8337
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "15c5f0fd-e88f-4fec-8096-9c6cd6a52551",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "3a9487cb-12b2-4460-8ac4-1f284f946356",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:56:59 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "3a9487cb-12b2-4460-8ac4-1f284f946356"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "15c5f0fd-e88f-4fec-8096-9c6cd6a52551",
+                "traceId": "6ab57e8f5908e5ee06a5fe7131263558"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b6a8c9ea-a9c7-4ec6-a45d-ba5f041e3563",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "9e89b0dd-7ff7-434e-bbb4-24e525470059",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:02 GMT",
+            "content-type": "application/json",
+            "content-length": "936",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "9e89b0dd-7ff7-434e-bbb4-24e525470059"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to determine if the MASP has accessibility features for wheelchair users. The assistant's response directly addresses this by providing a clear and comprehensive list of accessibility features, including ramp access, elevators, tactile flooring, adapted restrooms, and the availability of wheelchairs for loan. This information is highly relevant and actionable, moving the user significantly closer to their goal. The response is concise and avoids unnecessary detours, making it very helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b6a8c9ea-a9c7-4ec6-a45d-ba5f041e3563",
+                "traceId": "6ab57e962ef0951159df12034411990f"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8395,
+              "outputTokens": 114,
+              "totalTokens": 8509
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b6a8c9ea-a9c7-4ec6-a45d-ba5f041e3563",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "bd160747-d8e0-43ad-854e-b6d89979859d",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:05 GMT",
+            "content-type": "application/json",
+            "content-length": "886",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "bd160747-d8e0-43ad-854e-b6d89979859d"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response directly addresses the user's question about wheelchair accessibility at the MASP. The information provided (rampas de acesso, elevadores, piso tátil, banheiros adaptados, and cadeiras de rodas disponíveis) is fully consistent with the tool output, which explicitly states these features under 'Acessibilidade Física no Local.' There is no conflicting information, and the response is entirely faithful to the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b6a8c9ea-a9c7-4ec6-a45d-ba5f041e3563",
+                "traceId": "6ab57e962ef0951159df12034411990f"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8250,
+              "outputTokens": 109,
+              "totalTokens": 8359
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b6a8c9ea-a9c7-4ec6-a45d-ba5f041e3563",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "72178d62-850c-4ede-9afd-60acae8aba5b",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:06 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "72178d62-850c-4ede-9afd-60acae8aba5b"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b6a8c9ea-a9c7-4ec6-a45d-ba5f041e3563",
+                "traceId": "6ab57e962ef0951159df12034411990f"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b68ab39d-8707-4442-8a9a-adf13cf949cb",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "02519be3-b851-4f09-87ff-333b52244031",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:09 GMT",
+            "content-type": "application/json",
+            "content-length": "836",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "02519be3-b851-4f09-87ff-333b52244031"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to find out who painted the artwork 'Samba de quadra' and the year it was created. The assistant's response directly addresses this by providing the artist's name (Sergio Vidal) and the year (2009), along with a reference to the artwork. This information is concise, relevant, and fully satisfies the user's query, moving them closer to their goal without any unnecessary detours or confusion.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b68ab39d-8707-4442-8a9a-adf13cf949cb",
+                "traceId": "6ab57e9b7fe026c50f2c6250236fd3f5"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8338,
+              "outputTokens": 111,
+              "totalTokens": 8449
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b68ab39d-8707-4442-8a9a-adf13cf949cb",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "66534fa9-4e56-4c0f-9cf7-f02b5907f8dd",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:11 GMT",
+            "content-type": "application/json",
+            "content-length": "829",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "66534fa9-4e56-4c0f-9cf7-f02b5907f8dd"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response states that the artwork 'Samba de quadra' was painted by Sergio Vidal in 2009. This information is directly sourced from the tool output, which explicitly lists the artist as Sergio Vidal and the year as 2009 under 'Obra 3: Samba de quadra'. There is no conflicting information in the conversation history, and the response accurately reflects the details provided by the tool.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b68ab39d-8707-4442-8a9a-adf13cf949cb",
+                "traceId": "6ab57e9b7fe026c50f2c6250236fd3f5"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8193,
+              "outputTokens": 108,
+              "totalTokens": 8301
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b68ab39d-8707-4442-8a9a-adf13cf949cb",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "0d543af4-116a-40d8-8543-6ee07c1210e9",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:12 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "0d543af4-116a-40d8-8543-6ee07c1210e9"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b68ab39d-8707-4442-8a9a-adf13cf949cb",
+                "traceId": "6ab57e9b7fe026c50f2c6250236fd3f5"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "e22b4a93-3f9c-4206-bd72-ad932005f0fa",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "7a0a2adb-3ff8-4d52-a3cf-bf41874c551e",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:14 GMT",
+            "content-type": "application/json",
+            "content-length": "898",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "7a0a2adb-3ff8-4d52-a3cf-bf41874c551e"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to obtain a visual description of the artwork 'Kumurõ'. The assistant's response directly addresses this by providing a detailed and structured description of the painting, including its artistic elements, color scheme, and central motif. The information is relevant, comprehensive, and aligns with the user's request, moving them significantly closer to their goal. The inclusion of a reference to the artwork further enhances the response's usefulness.",
+            "context": {
+              "spanContext": {
+                "sessionId": "e22b4a93-3f9c-4206-bd72-ad932005f0fa",
+                "traceId": "6ab57ea0195f239b0fc8b73470541d4f"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8438,
+              "outputTokens": 108,
+              "totalTokens": 8546
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "e22b4a93-3f9c-4206-bd72-ad932005f0fa",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "50a4cc52-d6cc-491a-8459-5dca0ae6d58c",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:17 GMT",
+            "content-type": "application/json",
+            "content-length": "812",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "50a4cc52-d6cc-491a-8459-5dca0ae6d58c"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately describes the visual details of the artwork 'Kumurõ' as provided in the tool output. It mentions the geometric patterns, color gradient, and the small drawing of a wooden bench in the center, all of which align with the information retrieved. There is no conflicting information in the assistant's response when compared to the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "e22b4a93-3f9c-4206-bd72-ad932005f0fa",
+                "traceId": "6ab57ea0195f239b0fc8b73470541d4f"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8293,
+              "outputTokens": 92,
+              "totalTokens": 8385
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "e22b4a93-3f9c-4206-bd72-ad932005f0fa",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "aa78af71-05c3-4eca-90da-899025b91c3a",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:17 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "aa78af71-05c3-4eca-90da-899025b91c3a"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "e22b4a93-3f9c-4206-bd72-ad932005f0fa",
+                "traceId": "6ab57ea0195f239b0fc8b73470541d4f"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "d5c81c32-1696-4d88-895b-31882e12e7ec",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "fdfcbc1b-52d6-45be-83f2-1c16aeb36ecc",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:20 GMT",
+            "content-type": "application/json",
+            "content-length": "917",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "fdfcbc1b-52d6-45be-83f2-1c16aeb36ecc"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to understand the appearance of the clothing depicted in the artwork 'ORI'. The assistant's response provided a detailed and comprehensive description of the artwork, including its structure, colors, patterns, and visual elements. This information directly addresses the user's query and moves them significantly closer to achieving their goal by offering a clear and vivid depiction of the artwork. The response is factual, relevant, and actionable, making it very helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "d5c81c32-1696-4d88-895b-31882e12e7ec",
+                "traceId": "6ab57ea64804fe875d7912471edc9254"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8467,
+              "outputTokens": 110,
+              "totalTokens": 8577
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "d5c81c32-1696-4d88-895b-31882e12e7ec",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "a96f862a-b9a8-40fb-ad49-37adb8ac0639",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:23 GMT",
+            "content-type": "application/json",
+            "content-length": "898",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "a96f862a-b9a8-40fb-ad49-37adb8ac0639"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately describes the artwork 'ORI' based on the provided tool output. It mentions the dress's features, such as its long sleeves, quadriculated texture, vibrant colors, and the central design of a Black female profile. The description also includes details about the lower part of the skirt and the loose black threads. All information aligns with the tool's output, and there are no contradictions or conflicts with the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "d5c81c32-1696-4d88-895b-31882e12e7ec",
+                "traceId": "6ab57ea64804fe875d7912471edc9254"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8322,
+              "outputTokens": 110,
+              "totalTokens": 8432
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "d5c81c32-1696-4d88-895b-31882e12e7ec",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "7c79cdbd-7ff1-4448-a77e-4d2c78c1cc9a",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:24 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "7c79cdbd-7ff1-4448-a77e-4d2c78c1cc9a"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "d5c81c32-1696-4d88-895b-31882e12e7ec",
+                "traceId": "6ab57ea64804fe875d7912471edc9254"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "ed638fb2-5e15-48e7-9eba-cfece960d45a",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "0f853ddb-129c-4002-9085-fa2ad1a41013",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:26 GMT",
+            "content-type": "application/json",
+            "content-length": "922",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "0f853ddb-129c-4002-9085-fa2ad1a41013"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to learn about the sculpture 'Pau-Brasil'. The assistant's response provided detailed and relevant information about the artwork, including the artist, year of creation, materials used, visual description, and context of the donation. This directly addresses the user's request and moves them significantly closer to their goal by offering comprehensive and actionable information. The response is clear, concise, and directly related to the user's query, making it very helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "ed638fb2-5e15-48e7-9eba-cfece960d45a",
+                "traceId": "6ab57ead0ecff51d1deab9c57a07f97a"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8480,
+              "outputTokens": 114,
+              "totalTokens": 8594
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "ed638fb2-5e15-48e7-9eba-cfece960d45a",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "69fd9854-97eb-44f4-890c-4fafffc40b96",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:31 GMT",
+            "content-type": "application/json",
+            "content-length": "1045",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "69fd9854-97eb-44f4-890c-4fafffc40b96"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately describes the sculpture 'Pau-Brasil' based on the information provided in the tool output. It correctly identifies the artist (Thiago Honório), the year of creation (2014), the materials used (fac-símile of the book 'Pau-Brasil' and pau-brasil wood), and the visual details of the sculpture (colors, placement, and inscription). The response also correctly states that the sculpture was donated by the artist for the 'Histórias brasileiras' exhibition (2022-23). There is no information in the assistant's response that conflicts with the conversation history or the tool output.",
+            "context": {
+              "spanContext": {
+                "sessionId": "ed638fb2-5e15-48e7-9eba-cfece960d45a",
+                "traceId": "6ab57ead0ecff51d1deab9c57a07f97a"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8335,
+              "outputTokens": 157,
+              "totalTokens": 8492
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "ed638fb2-5e15-48e7-9eba-cfece960d45a",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "aef041ed-8d47-44ee-812e-4247dc162392",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:31 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "aef041ed-8d47-44ee-812e-4247dc162392"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "ed638fb2-5e15-48e7-9eba-cfece960d45a",
+                "traceId": "6ab57ead0ecff51d1deab9c57a07f97a"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "0edcd79d-4804-4d43-b1cb-266b691a2be6",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "dcb04027-bee0-4fed-9893-356b77bd1528",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:35 GMT",
+            "content-type": "application/json",
+            "content-length": "1931",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "dcb04027-bee0-4fed-9893-356b77bd1528"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to learn about the artwork 'Os Retirantes.' The assistant's response provided detailed and relevant information about the artwork, including the artist, year, technique, visual details, and the socio-historical context of the piece. It also included a reference to a related commentary, which adds depth to the user's understanding. The response directly addresses the user's request and moves them significantly closer to their goal by offering comprehensive and actionable information.",
+            "context": {
+              "spanContext": {
+                "sessionId": "0edcd79d-4804-4d43-b1cb-266b691a2be6",
+                "traceId": "6ab57eb57de388714c0cd560440da23e"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8445,
+              "outputTokens": 114,
+              "totalTokens": 8559
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's initial request was to learn about the artwork 'Os Retirantes,' and in the subsequent turn, they asked for the historical context of the piece. The assistant's response directly addresses this by providing detailed information about the historical backdrop of the artwork, including the socio-economic conditions of the time, the artist's intent, and the broader artistic movement. This information is highly relevant and moves the user significantly closer to understanding the artwork's context, fulfilling their goal. The response is comprehensive and actionable, making it very helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "0edcd79d-4804-4d43-b1cb-266b691a2be6",
+                "traceId": "6ab57ebb4367e08d774f6ec12d43d7f8"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8655,
+              "outputTokens": 127,
+              "totalTokens": 8782
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "0edcd79d-4804-4d43-b1cb-266b691a2be6",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "1fe1853d-5fd9-4d24-955a-2605e98dd385",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:39 GMT",
+            "content-type": "application/json",
+            "content-length": "1833",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "1fe1853d-5fd9-4d24-955a-2605e98dd385"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately reflects the information provided in the tool output regarding the artwork 'Retirantes' by Candido Portinari. The details about the artist, year, technique, visual elements, and context match the tool output without any contradictions. The response is concise and directly addresses the user's query, ensuring faithfulness to the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "0edcd79d-4804-4d43-b1cb-266b691a2be6",
+                "traceId": "6ab57eb57de388714c0cd560440da23e"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8300,
+              "outputTokens": 91,
+              "totalTokens": 8391
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response about the historical context of 'Retirantes' aligns with the information provided in the conversation history. It correctly references the severe droughts in the Brazilian Northeast during the 1930s and 1940s, the migration of people to the Southeast, and Portinari's intent to depict the suffering and dignity of these migrants. The response also mentions the broader artistic movement aimed at highlighting social inequalities and the plight of the poor, which is consistent with the details given in the tool output. There are no contradictions or conflicts with the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "0edcd79d-4804-4d43-b1cb-266b691a2be6",
+                "traceId": "6ab57ebb4367e08d774f6ec12d43d7f8"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8510,
+              "outputTokens": 140,
+              "totalTokens": 8650
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "0edcd79d-4804-4d43-b1cb-266b691a2be6",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "d9530ca0-7b8f-448a-912a-ebaf23d715b0",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:40 GMT",
+            "content-type": "application/json",
+            "content-length": "1035",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "d9530ca0-7b8f-448a-912a-ebaf23d715b0"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "0edcd79d-4804-4d43-b1cb-266b691a2be6",
+                "traceId": "6ab57ebb4367e08d774f6ec12d43d7f8"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "0edcd79d-4804-4d43-b1cb-266b691a2be6",
+                "traceId": "6ab57eb57de388714c0cd560440da23e"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "34da084c-32d7-4679-a462-33e0223b7783",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "3b6837c6-21a8-484b-b843-c5da5a96eac8",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:43 GMT",
+            "content-type": "application/json",
+            "content-length": "1732",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "3b6837c6-21a8-484b-b843-c5da5a96eac8"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to find out if the MASP is open on Mondays. The assistant's response directly addresses this by stating that the MASP is closed on Mondays, which is the exact information the user was seeking. The response is clear, concise, and provides a reference to the source of the information, which adds credibility. This moves the user fully towards their goal by answering their question comprehensively.",
+            "context": {
+              "spanContext": {
+                "sessionId": "34da084c-32d7-4679-a462-33e0223b7783",
+                "traceId": "6ab57ebf0760829b1d3c7a017997b340"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8322,
+              "outputTokens": 104,
+              "totalTokens": 8426
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's initial goal was to find out if the MASP is open on Mondays, which was answered in the previous turn. In the current turn, the user asks about the opening hours on Saturdays. The assistant's response directly addresses this new query by providing the specific opening hours for Saturdays (10h to 18h) and includes a reference to the source of this information. This response is relevant, clear, and moves the user closer to their goal of understanding the museum's operating hours.",
+            "context": {
+              "spanContext": {
+                "sessionId": "34da084c-32d7-4679-a462-33e0223b7783",
+                "traceId": "6ab57ec3663fc5086faac43912221aca"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8417,
+              "outputTokens": 127,
+              "totalTokens": 8544
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "34da084c-32d7-4679-a462-33e0223b7783",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "8280d89c-a4d9-4c84-b60e-854822d2cb1e",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:46 GMT",
+            "content-type": "application/json",
+            "content-length": "1481",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "8280d89c-a4d9-4c84-b60e-854822d2cb1e"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user asked if the MASP is open on Mondays. The assistant's response states that the MASP is closed on Mondays, which aligns with the information provided in the tool output under 'INFORMAÇÕES GERAIS DO MUSEU'. The response is concise and directly addresses the user's query without any conflicting information.",
+            "context": {
+              "spanContext": {
+                "sessionId": "34da084c-32d7-4679-a462-33e0223b7783",
+                "traceId": "6ab57ebf0760829b1d3c7a017997b340"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8177,
+              "outputTokens": 92,
+              "totalTokens": 8269
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response states that the MASP opens on Saturdays from 10h to 18h. This information is consistent with the conversation history, specifically the tool output which states: 'Quarta, quinta, sábado e domingo: 10h às 18h'. There is no conflicting information in the assistant's response regarding the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "34da084c-32d7-4679-a462-33e0223b7783",
+                "traceId": "6ab57ec3663fc5086faac43912221aca"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8272,
+              "outputTokens": 96,
+              "totalTokens": 8368
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "34da084c-32d7-4679-a462-33e0223b7783",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "b33d5832-2513-4e30-a195-71243dbe99e2",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:46 GMT",
+            "content-type": "application/json",
+            "content-length": "1035",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "b33d5832-2513-4e30-a195-71243dbe99e2"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "34da084c-32d7-4679-a462-33e0223b7783",
+                "traceId": "6ab57ebf0760829b1d3c7a017997b340"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "34da084c-32d7-4679-a462-33e0223b7783",
+                "traceId": "6ab57ec3663fc5086faac43912221aca"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "2d38b717-cfec-40bd-a4a4-2a1fc728e173",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:49 GMT",
+            "content-type": "application/json",
+            "content-length": "1949",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "2d38b717-cfec-40bd-a4a4-2a1fc728e173"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to obtain a description of the artwork 'Dead Man Walking'. The assistant's response provided a detailed and accurate description of the artwork, including visual elements, the artist's background, and the context of the donation. This information directly addresses the user's request and moves them significantly closer to their goal by offering comprehensive and relevant details about the artwork. The response is clear, focused, and actionable, making it very helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1",
+                "traceId": "6ab57ec545642a7140756a8f768a6569"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8488,
+              "outputTokens": 109,
+              "totalTokens": 8597
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's initial goal was to get a description of the artwork 'Dead Man Walking,' which was fully addressed in the assistant's previous response. The user then asked a follow-up question specifically about the clothing worn by the man in the artwork. The assistant's response directly answered this question by providing a clear and concise description of the man's attire (a black t-shirt and blue jeans). This response moves the user closer to their goal by providing the specific information requested, without any irrelevant details or confusion. It is relevant, actionable, and advances the user's understanding of the artwork.",
+            "context": {
+              "spanContext": {
+                "sessionId": "1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1",
+                "traceId": "6ab57ecc71becb6767ab44b461591170"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8573,
+              "outputTokens": 138,
+              "totalTokens": 8711
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "eeebc967-cd29-403c-8dff-2fdd243c219f",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:52 GMT",
+            "content-type": "application/json",
+            "content-length": "1589",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "eeebc967-cd29-403c-8dff-2fdd243c219f"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately describes the artwork 'Dead Man Walking' based on the provided tool output. It includes details about the subject, attire, physical features, lighting, background, and contextual information such as the artist, year, and exhibition. There is no conflicting information with the conversation history or tool output. The response is entirely faithful to the source material.",
+            "context": {
+              "spanContext": {
+                "sessionId": "1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1",
+                "traceId": "6ab57ec545642a7140756a8f768a6569"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8343,
+              "outputTokens": 92,
+              "totalTokens": 8435
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately describes the clothing of the man in the artwork 'Dead Man Walking' as a 'camiseta preta lisa e uma calça jeans azul,' which matches the details provided in the tool output. There is no conflicting information in the conversation history, and the response is consistent with the user's query and the retrieved data.",
+            "context": {
+              "spanContext": {
+                "sessionId": "1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1",
+                "traceId": "6ab57ecc71becb6767ab44b461591170"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8428,
+              "outputTokens": 91,
+              "totalTokens": 8519
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "5da0c9d0-9760-4da6-8474-85d7d343d6eb",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:52 GMT",
+            "content-type": "application/json",
+            "content-length": "1035",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "5da0c9d0-9760-4da6-8474-85d7d343d6eb"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1",
+                "traceId": "6ab57ecc71becb6767ab44b461591170"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1",
+                "traceId": "6ab57ec545642a7140756a8f768a6569"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "e07f4cd6-4249-4a3c-8e54-ec871374d4e8",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "fb4ab690-7e38-4ff0-84a9-4de20937d1fc",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:54 GMT",
+            "content-type": "application/json",
+            "content-length": "866",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "fb4ab690-7e38-4ff0-84a9-4de20937d1fc"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to find metro directions to the Museu do Ipiranga. The assistant's response states it cannot provide the information due to database limitations, which is a clear acknowledgment of its inability to help. While this does not move the user closer to their goal, it avoids providing incorrect or misleading information, which could be worse. The response is neutral as it neither helps nor actively obstructs the user's progress.",
+            "context": {
+              "spanContext": {
+                "sessionId": "e07f4cd6-4249-4a3c-8e54-ec871374d4e8",
+                "traceId": "6ab57ecd1230987662750d253b44f32d"
+              }
+            },
+            "value": 0.5,
+            "label": "Neutral/Mixed",
+            "tokenUsage": {
+              "inputTokens": 813,
+              "outputTokens": 110,
+              "totalTokens": 923
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "e07f4cd6-4249-4a3c-8e54-ec871374d4e8",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "0e30ab59-3435-42a8-815d-631d9500d374",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:56 GMT",
+            "content-type": "application/json",
+            "content-length": "864",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "0e30ab59-3435-42a8-815d-631d9500d374"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user asked for directions to the Museu do Ipiranga via metro. The assistant's response states that it cannot provide this information because the MASP database does not contain details about other museums' transportation or location. This response is consistent with the conversation history, as the assistant is acknowledging its limitations based on the available data. There is no conflicting information in the assistant's response.",
+            "context": {
+              "spanContext": {
+                "sessionId": "e07f4cd6-4249-4a3c-8e54-ec871374d4e8",
+                "traceId": "6ab57ecd1230987662750d253b44f32d"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 668,
+              "outputTokens": 96,
+              "totalTokens": 764
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "e07f4cd6-4249-4a3c-8e54-ec871374d4e8",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "90092f28-2de5-4b65-bde7-11f25b84956c",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:56 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "90092f28-2de5-4b65-bde7-11f25b84956c"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "e07f4cd6-4249-4a3c-8e54-ec871374d4e8",
+                "traceId": "6ab57ecd1230987662750d253b44f32d"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "ce64aaa1-4f83-430d-a62d-cf7fb6f7d90e",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "23994724-b23a-4802-8ae2-f22104fe80af",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:57:58 GMT",
+            "content-type": "application/json",
+            "content-length": "813",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "23994724-b23a-4802-8ae2-f22104fe80af"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to receive recommendations for restaurants near Avenida Paulista. The assistant's response explicitly states it cannot provide such information and only offers details about the MASP museum. This does not move the user closer to their goal and instead confirms the assistant's inability to help. The response is clear but unhelpful in the context of the user's request.",
+            "context": {
+              "spanContext": {
+                "sessionId": "ce64aaa1-4f83-430d-a62d-cf7fb6f7d90e",
+                "traceId": "6ab57ed07cf7d58639d6c4ea45ff00f8"
+              }
+            },
+            "value": 0.0,
+            "label": "Not Helpful At All",
+            "tokenUsage": {
+              "inputTokens": 797,
+              "outputTokens": 96,
+              "totalTokens": 893
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "ce64aaa1-4f83-430d-a62d-cf7fb6f7d90e",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "fcaee990-af98-4548-bcc0-4af42ae268d2",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:00 GMT",
+            "content-type": "application/json",
+            "content-length": "885",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "fcaee990-af98-4548-bcc0-4af42ae268d2"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user asked for restaurant recommendations near Avenida Paulista. The assistant's response states that it cannot provide such information, as the Guia Acessível do MASP only assists with museum-related queries. This response is consistent with the conversation history, as there is no prior context or tool output indicating that the assistant can provide restaurant recommendations. The assistant's response does not conflict with the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "ce64aaa1-4f83-430d-a62d-cf7fb6f7d90e",
+                "traceId": "6ab57ed07cf7d58639d6c4ea45ff00f8"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 652,
+              "outputTokens": 98,
+              "totalTokens": 750
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "ce64aaa1-4f83-430d-a62d-cf7fb6f7d90e",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "2f37eeda-db47-4c82-a68c-a93253f3aebc",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:00 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "2f37eeda-db47-4c82-a68c-a93253f3aebc"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "ce64aaa1-4f83-430d-a62d-cf7fb6f7d90e",
+                "traceId": "6ab57ed07cf7d58639d6c4ea45ff00f8"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "9c960dfc-e831-489e-88ad-25c717340e82",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "39f1fa88-fb39-4e39-9a23-4c4b4d5779e9",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:03 GMT",
+            "content-type": "application/json",
+            "content-length": "950",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "39f1fa88-fb39-4e39-9a23-4c4b4d5779e9"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to obtain a description of the 'Mona Lisa' by Da Vinci. The assistant's response clarifies that the artwork is not part of the MASP's collection and thus cannot provide a description based on the museum's database. While the response does not fulfill the user's request, it provides a clear and relevant explanation for why the information cannot be provided, which helps manage the user's expectations and avoids confusion. However, it does not move the user closer to their goal of obtaining the description.",
+            "context": {
+              "spanContext": {
+                "sessionId": "9c960dfc-e831-489e-88ad-25c717340e82",
+                "traceId": "6ab57ed43bb8830764a8cd6a0907cd4a"
+              }
+            },
+            "value": 0.5,
+            "label": "Neutral/Mixed",
+            "tokenUsage": {
+              "inputTokens": 816,
+              "outputTokens": 129,
+              "totalTokens": 945
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "9c960dfc-e831-489e-88ad-25c717340e82",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "16b0a0d2-630b-4d2a-8484-4fca3aa3974d",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:05 GMT",
+            "content-type": "application/json",
+            "content-length": "886",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "16b0a0d2-630b-4d2a-8484-4fca3aa3974d"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user requested a description of the 'Mona Lisa' by Da Vinci. The assistant's response states that the artwork is not part of the MASP collection and thus cannot provide a detailed description based on the museum's database. This response is accurate and does not conflict with the conversation history, as the assistant is truthfully acknowledging the limitations of its knowledge source. There is no contradiction or misleading information in the response.",
+            "context": {
+              "spanContext": {
+                "sessionId": "9c960dfc-e831-489e-88ad-25c717340e82",
+                "traceId": "6ab57ed43bb8830764a8cd6a0907cd4a"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 671,
+              "outputTokens": 104,
+              "totalTokens": 775
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "9c960dfc-e831-489e-88ad-25c717340e82",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "edf19e55-758c-48e8-a6a8-75cacfaf91ef",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:05 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "edf19e55-758c-48e8-a6a8-75cacfaf91ef"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "9c960dfc-e831-489e-88ad-25c717340e82",
+                "traceId": "6ab57ed43bb8830764a8cd6a0907cd4a"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "04883743-3331-4573-968a-8f2d449ad527",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "8e095b8c-93d7-49a9-9eac-a728195bbe12",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:09 GMT",
+            "content-type": "application/json",
+            "content-length": "939",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "8e095b8c-93d7-49a9-9eac-a728195bbe12"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's initial request was to confirm the presence of a small white dog in the right corner of the painting 'Rosa e Azul'. The assistant's response directly addresses this query by stating that there is no white dog in the painting and provides a brief description of the artwork, including details about the subjects and their attire. This response moves the user closer to their goal by providing a clear and accurate answer to their specific question, thus clarifying any misunderstanding they might have had.",
+            "context": {
+              "spanContext": {
+                "sessionId": "04883743-3331-4573-968a-8f2d449ad527",
+                "traceId": "6ab57f0063f6f267078c623457269095"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8389,
+              "outputTokens": 115,
+              "totalTokens": 8504
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "04883743-3331-4573-968a-8f2d449ad527",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "f53fdc64-30dd-4916-a30a-e25ead3e1a53",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:11 GMT",
+            "content-type": "application/json",
+            "content-length": "917",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "f53fdc64-30dd-4916-a30a-e25ead3e1a53"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user asked if there is a small white dog in the right corner of the painting 'Rosa e Azul'. The assistant's response correctly states that there is no white dog in the painting, based on the tool output which explicitly mentions that 'Não há cachorro branco no canto direito' and describes the visual elements of the painting (the girls' dresses, the carpet, and their feet). The response is entirely consistent with the tool output and does not introduce any conflicting information.",
+            "context": {
+              "spanContext": {
+                "sessionId": "04883743-3331-4573-968a-8f2d449ad527",
+                "traceId": "6ab57f0063f6f267078c623457269095"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8244,
+              "outputTokens": 115,
+              "totalTokens": 8359
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "04883743-3331-4573-968a-8f2d449ad527",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "cd540796-3a73-4a2d-b895-92d5824c5af3",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:12 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "cd540796-3a73-4a2d-b895-92d5824c5af3"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "04883743-3331-4573-968a-8f2d449ad527",
+                "traceId": "6ab57f0063f6f267078c623457269095"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "9269aca5-79d5-420b-9b51-731399b360e3",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "b399db72-02c1-4371-bf79-dd5ad7aa1975",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:15 GMT",
+            "content-type": "application/json",
+            "content-length": "975",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "b399db72-02c1-4371-bf79-dd5ad7aa1975"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to confirm whether the painting 'Incêndio no Museu' depicts people running in despair for their schoolwork. The assistant's response directly addresses this by providing a clear description of the artwork, stating that it does not show people running in despair but rather focuses on a column of smoke and flames against a night sky. This information is relevant and moves the user closer to their goal by clarifying the content of the painting. The response is concise and directly answers the user's query, making it very helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "9269aca5-79d5-420b-9b51-731399b360e3",
+                "traceId": "6ab57f051c02992c28ffd3064a091e18"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8414,
+              "outputTokens": 127,
+              "totalTokens": 8541
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "9269aca5-79d5-420b-9b51-731399b360e3",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "335cc644-f16b-4be6-b3fe-bbcd2d13ced1",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:18 GMT",
+            "content-type": "application/json",
+            "content-length": "974",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "335cc644-f16b-4be6-b3fe-bbcd2d13ced1"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user asked if the painting 'Incêndio no Museu' depicts people running in despair. The assistant's response correctly states that the painting does not show people running but instead describes a dense column of smoke and flames against a night sky, with no human figures present. This aligns with the tool output, which provides detailed information about the artwork, confirming that there are no people depicted in the scene. Therefore, the assistant's response is entirely faithful to the conversation history and the provided tool output.",
+            "context": {
+              "spanContext": {
+                "sessionId": "9269aca5-79d5-420b-9b51-731399b360e3",
+                "traceId": "6ab57f051c02992c28ffd3064a091e18"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8269,
+              "outputTokens": 121,
+              "totalTokens": 8390
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "9269aca5-79d5-420b-9b51-731399b360e3",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "da1528a9-389f-4ad1-88bc-dca6f40b18ff",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:19 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "da1528a9-389f-4ad1-88bc-dca6f40b18ff"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "9269aca5-79d5-420b-9b51-731399b360e3",
+                "traceId": "6ab57f051c02992c28ffd3064a091e18"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "5537e7b7-f67e-4a2d-afae-9b8572fc54e9",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "0e8c371a-8340-44c5-83f6-d084a0636767",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:21 GMT",
+            "content-type": "application/json",
+            "content-length": "918",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "0e8c371a-8340-44c5-83f6-d084a0636767"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to obtain a carrot cake recipe with chocolate frosting. The assistant's response explicitly states it cannot provide recipes and instead offers information about the MASP museum, which is entirely unrelated to the user's request. This response does not move the user closer to their goal and instead creates confusion by redirecting the conversation to an irrelevant topic. The response is unhelpful as it does not address the user's needs or provide any relevant information.",
+            "context": {
+              "spanContext": {
+                "sessionId": "5537e7b7-f67e-4a2d-afae-9b8572fc54e9",
+                "traceId": "6ab57f0a37b0d8af7f5b973731e79d1f"
+              }
+            },
+            "value": 0.17,
+            "label": "Very Unhelpful",
+            "tokenUsage": {
+              "inputTokens": 803,
+              "outputTokens": 114,
+              "totalTokens": 917
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "5537e7b7-f67e-4a2d-afae-9b8572fc54e9",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "ac477c26-2294-4729-a3d0-fcf79895621a",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:22 GMT",
+            "content-type": "application/json",
+            "content-length": "850",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "ac477c26-2294-4729-a3d0-fcf79895621a"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user requested a carrot cake recipe with chocolate frosting, but the assistant responded by stating it cannot provide recipes and instead offered information about the MASP museum. This response conflicts with the user's request, as the assistant did not address the recipe inquiry and instead provided unrelated information about its role and limitations. The assistant's response is not faithful to the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "5537e7b7-f67e-4a2d-afae-9b8572fc54e9",
+                "traceId": "6ab57f0a37b0d8af7f5b973731e79d1f"
+              }
+            },
+            "value": 0.0,
+            "label": "Not At All",
+            "tokenUsage": {
+              "inputTokens": 658,
+              "outputTokens": 94,
+              "totalTokens": 752
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "5537e7b7-f67e-4a2d-afae-9b8572fc54e9",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "46c33d31-365e-4001-9905-01564ab39d34",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:22 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "46c33d31-365e-4001-9905-01564ab39d34"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "5537e7b7-f67e-4a2d-afae-9b8572fc54e9",
+                "traceId": "6ab57f0a37b0d8af7f5b973731e79d1f"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "12b1fa9b-5c3c-4ea9-9073-acf2a1d3197e",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "a85ae8cf-ecdd-4e96-a68c-da5952fda88f",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:25 GMT",
+            "content-type": "application/json",
+            "content-length": "881",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "a85ae8cf-ecdd-4e96-a68c-da5952fda88f"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to find the exact location of the museum. The assistant's response directly provides the precise address of the MASP, including the street, number, neighborhood, city, and state. This information is clear, concise, and directly answers the user's query, moving them significantly closer to their goal. The inclusion of a reference to the source of the information adds credibility but does not detract from the helpfulness of the response.",
+            "context": {
+              "spanContext": {
+                "sessionId": "12b1fa9b-5c3c-4ea9-9073-acf2a1d3197e",
+                "traceId": "6ab57f0d12c75b75213ec16d490f2190"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8343,
+              "outputTokens": 110,
+              "totalTokens": 8453
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "12b1fa9b-5c3c-4ea9-9073-acf2a1d3197e",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "5418e471-4c83-4bcd-a670-1574d9d662a9",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:28 GMT",
+            "content-type": "application/json",
+            "content-length": "927",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "5418e471-4c83-4bcd-a670-1574d9d662a9"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response directly answers the user's question about the exact location of the museum by providing the address 'Avenida Paulista, 1578, Bela Vista, São Paulo, SP, Brasil.' This information is consistent with the tool output, which explicitly states the address under 'INFORMAÇÕES GERAIS DO MUSEU.' There is no conflicting information in the assistant's response when compared to the conversation history or the tool output. The response is concise and faithful to the provided data.",
+            "context": {
+              "spanContext": {
+                "sessionId": "12b1fa9b-5c3c-4ea9-9073-acf2a1d3197e",
+                "traceId": "6ab57f0d12c75b75213ec16d490f2190"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8198,
+              "outputTokens": 125,
+              "totalTokens": 8323
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "12b1fa9b-5c3c-4ea9-9073-acf2a1d3197e",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "eb7f8659-d11f-4081-8697-5d2b4df9b355",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:28 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "eb7f8659-d11f-4081-8697-5d2b4df9b355"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "12b1fa9b-5c3c-4ea9-9073-acf2a1d3197e",
+                "traceId": "6ab57f0d12c75b75213ec16d490f2190"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "552b063d-262e-4698-ada2-387ccc0eef06",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "4f22eb65-164a-4944-879e-f2b45a13d8e3",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:31 GMT",
+            "content-type": "application/json",
+            "content-length": "948",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "4f22eb65-164a-4944-879e-f2b45a13d8e3"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to determine if the MASP has tactile flooring to assist with mobility. The assistant's response directly addresses this by confirming the presence of tactile flooring and providing additional relevant information about other accessibility features such as ramps, elevators, adapted bathrooms, and wheelchairs. This response moves the user multiple steps towards their goal by offering comprehensive and actionable information, thus significantly advancing their understanding of the museum's accessibility.",
+            "context": {
+              "spanContext": {
+                "sessionId": "552b063d-262e-4698-ada2-387ccc0eef06",
+                "traceId": "6ab57f115e68d2240ac01d392d218e11"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8378,
+              "outputTokens": 110,
+              "totalTokens": 8488
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "552b063d-262e-4698-ada2-387ccc0eef06",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "f56e8d34-a54f-4ee5-9357-df3660e15f89",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:34 GMT",
+            "content-type": "application/json",
+            "content-length": "1010",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "f56e8d34-a54f-4ee5-9357-df3660e15f89"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response states that the MASP has tactile flooring to aid in the mobility of visually impaired individuals, along with other accessibility features like ramps, elevators, adapted bathrooms, and wheelchairs for loan. This information is directly supported by the tool output, which explicitly mentions 'piso tátil' under 'Acessibilidade Física no Local.' There is no contradiction or additional information in the assistant's response that conflicts with the conversation history or the tool output. Therefore, the response is entirely faithful to the provided data.",
+            "context": {
+              "spanContext": {
+                "sessionId": "552b063d-262e-4698-ada2-387ccc0eef06",
+                "traceId": "6ab57f115e68d2240ac01d392d218e11"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8233,
+              "outputTokens": 130,
+              "totalTokens": 8363
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "552b063d-262e-4698-ada2-387ccc0eef06",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "7761fcfc-b686-4adc-a37f-7c7ba7380081",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:34 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "7761fcfc-b686-4adc-a37f-7c7ba7380081"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "552b063d-262e-4698-ada2-387ccc0eef06",
+                "traceId": "6ab57f115e68d2240ac01d392d218e11"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "62884a42-cae3-43b5-bb40-029ff7ee0243",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "a31b9a39-c9ca-4824-945c-990e9133ad7d",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:37 GMT",
+            "content-type": "application/json",
+            "content-length": "1032",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "a31b9a39-c9ca-4824-945c-990e9133ad7d"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to obtain specific information about the artwork 'Não há cartografia no mundo dos Pajés,' namely the year it was created and the technique used. The assistant's response directly addresses this goal by providing both the year (2020) and the technique (escritura e desenho sobre mapa do século 17). The information is clear, concise, and directly relevant to the user's query. Additionally, the response includes a reference to the artwork, which adds credibility and context. This moves the user significantly closer to achieving their goal by fulfilling their request comprehensively.",
+            "context": {
+              "spanContext": {
+                "sessionId": "62884a42-cae3-43b5-bb40-029ff7ee0243",
+                "traceId": "6ab57f15752218dc434a85c63244df42"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8371,
+              "outputTokens": 142,
+              "totalTokens": 8513
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "62884a42-cae3-43b5-bb40-029ff7ee0243",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "761ebd01-06ec-40ad-8107-fde078198fea",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:40 GMT",
+            "content-type": "application/json",
+            "content-length": "783",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "761ebd01-06ec-40ad-8107-fde078198fea"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response provides the year (2020) and technique (escritura e desenho sobre mapa do século 17) of the artwork 'Não há cartografia no mundo dos Pajés', which matches the information retrieved from the tool output. There is no conflicting information in the conversation history, and the response is directly sourced from the provided data.",
+            "context": {
+              "spanContext": {
+                "sessionId": "62884a42-cae3-43b5-bb40-029ff7ee0243",
+                "traceId": "6ab57f15752218dc434a85c63244df42"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8226,
+              "outputTokens": 96,
+              "totalTokens": 8322
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "62884a42-cae3-43b5-bb40-029ff7ee0243",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "492376d3-5c15-4733-a4ec-0c1c9fe5d7dd",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:40 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "492376d3-5c15-4733-a4ec-0c1c9fe5d7dd"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "62884a42-cae3-43b5-bb40-029ff7ee0243",
+                "traceId": "6ab57f15752218dc434a85c63244df42"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b75c746d-9863-4b6a-863a-d7d9b77b69ef",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "08c4927f-eb0d-4280-8d34-bd8f0b64f86d",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:43 GMT",
+            "content-type": "application/json",
+            "content-length": "954",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "08c4927f-eb0d-4280-8d34-bd8f0b64f86d"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to obtain a detailed visual description of the artwork 'Poder bélico'. The assistant's response directly addresses this by providing a comprehensive and specific description of the artwork, including the artist, year, technique, and a detailed account of the visual elements such as the subject's attire, the throne's design, and the surrounding objects. This information is highly relevant and moves the user significantly closer to achieving their goal by fulfilling their request with clarity and precision.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b75c746d-9863-4b6a-863a-d7d9b77b69ef",
+                "traceId": "6ab57f1a61d20992090d66404eecebc1"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8471,
+              "outputTokens": 115,
+              "totalTokens": 8586
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b75c746d-9863-4b6a-863a-d7d9b77b69ef",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "81ac3271-57b2-4a68-8f89-3f6156469fab",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:46 GMT",
+            "content-type": "application/json",
+            "content-length": "906",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "81ac3271-57b2-4a68-8f89-3f6156469fab"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately describes the visual details of the artwork 'Poder bélico' based on the information provided in the tool output. It includes specifics about the subject (a man with dreadlocks), his attire, the throne-like chair, the cajado and pincéis, and the surrounding elements like the small bench with a paleta. All details align with the tool output, and there are no contradictions or omissions. The response is faithful to the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b75c746d-9863-4b6a-863a-d7d9b77b69ef",
+                "traceId": "6ab57f1a61d20992090d66404eecebc1"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8326,
+              "outputTokens": 117,
+              "totalTokens": 8443
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b75c746d-9863-4b6a-863a-d7d9b77b69ef",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "126fd23b-e6c3-4922-aa63-e453bb9c337a",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:46 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "126fd23b-e6c3-4922-aa63-e453bb9c337a"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b75c746d-9863-4b6a-863a-d7d9b77b69ef",
+                "traceId": "6ab57f1a61d20992090d66404eecebc1"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "eea1534a-d689-44e4-888b-7c2e3416b66a",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "19ae8b35-9e3f-4e90-9700-07d103ca9251",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:49 GMT",
+            "content-type": "application/json",
+            "content-length": "1019",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "19ae8b35-9e3f-4e90-9700-07d103ca9251"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to obtain a description of the painting 'Indígenas em foco' and specifically know the colors of the headdress (cocar). The assistant's response directly addresses both aspects: it provides a concise description of the painting and details the colors of the headdress, including the base feathers (green and yellow) and the larger feathers (white with reddish tips). This information is relevant, specific, and directly moves the user closer to achieving their goal. The response is clear and actionable, fulfilling the user's request without unnecessary detours or confusion.",
+            "context": {
+              "spanContext": {
+                "sessionId": "eea1534a-d689-44e4-888b-7c2e3416b66a",
+                "traceId": "6ab57f1f355cb8673dcc69b90d5db019"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8408,
+              "outputTokens": 137,
+              "totalTokens": 8545
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "eea1534a-d689-44e4-888b-7c2e3416b66a",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "4fa683ba-547d-4af9-a3d9-fd5287987ad5",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:52 GMT",
+            "content-type": "application/json",
+            "content-length": "829",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "4fa683ba-547d-4af9-a3d9-fd5287987ad5"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately describes the artwork 'Indígenas em foco' by Arissana Pataxó, including details about the cocar's colors (green and yellow base, white with reddish tips). This information aligns perfectly with the tool output, which provides the same description. There is no conflicting information in the assistant's response compared to the conversation history or tool output.",
+            "context": {
+              "spanContext": {
+                "sessionId": "eea1534a-d689-44e4-888b-7c2e3416b66a",
+                "traceId": "6ab57f1f355cb8673dcc69b90d5db019"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8263,
+              "outputTokens": 100,
+              "totalTokens": 8363
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "eea1534a-d689-44e4-888b-7c2e3416b66a",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "8dec9522-df52-4716-ac9a-8628f4532557",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:52 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "8dec9522-df52-4716-ac9a-8628f4532557"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "eea1534a-d689-44e4-888b-7c2e3416b66a",
+                "traceId": "6ab57f1f355cb8673dcc69b90d5db019"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "37e88989-28e6-438e-a8f9-d82c31829016",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "56b7e505-9ca4-418b-b525-87d74ddb6b19",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:55 GMT",
+            "content-type": "application/json",
+            "content-length": "925",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "56b7e505-9ca4-418b-b525-87d74ddb6b19"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to find out what is written on the tapestry from the 'Profecias' series and where the words are applied. The assistant's response directly addresses this by providing the exact text from the tapestry ('EM 2085', 'POVOS ORIGINÁRIOS', 'RETOMAM A', 'AMAZÔNIA') and specifies that the words are applied in embroidered fabric on a dark blue tapestry background. This information is clear, relevant, and directly answers the user's query, moving them significantly closer to their goal.",
+            "context": {
+              "spanContext": {
+                "sessionId": "37e88989-28e6-438e-a8f9-d82c31829016",
+                "traceId": "6ab57f246c5553607c5a2dbd22165dba"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8505,
+              "outputTokens": 144,
+              "totalTokens": 8649
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "37e88989-28e6-438e-a8f9-d82c31829016",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "f98ee15d-a876-45bb-a3f4-d376b6f72a0d",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:58 GMT",
+            "content-type": "application/json",
+            "content-length": "796",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "f98ee15d-a876-45bb-a3f4-d376b6f72a0d"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response directly references the tool output, specifically 'Obra 20: Em 2085 povos originários retomam a Amazônia, da série Profecias', and accurately describes the text and its application on the tapestry. There is no conflicting information with the conversation history or the tool output. The response is concise and faithful to the provided data.",
+            "context": {
+              "spanContext": {
+                "sessionId": "37e88989-28e6-438e-a8f9-d82c31829016",
+                "traceId": "6ab57f246c5553607c5a2dbd22165dba"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8360,
+              "outputTokens": 99,
+              "totalTokens": 8459
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "37e88989-28e6-438e-a8f9-d82c31829016",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "3d99ee35-e89b-40cd-b43b-6cfdf0f09406",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:58:58 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "3d99ee35-e89b-40cd-b43b-6cfdf0f09406"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "37e88989-28e6-438e-a8f9-d82c31829016",
+                "traceId": "6ab57f246c5553607c5a2dbd22165dba"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "726f69d2-1ae3-458d-a9ae-9b9da81811e6",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "de8b7549-cb9e-45c5-a432-8932a3fbcff4",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:01 GMT",
+            "content-type": "application/json",
+            "content-length": "1818",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "de8b7549-cb9e-45c5-a432-8932a3fbcff4"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to find out the author of the artwork 'Retrato de Maria Auxiliadora.' The assistant's response directly addresses this goal by providing the name of the artist, Panmela Castro, and includes a reference to the specific artwork (Obra 16). This information is clear, relevant, and moves the user closer to achieving their goal. The response is concise and does not include any unnecessary or confusing information.",
+            "context": {
+              "spanContext": {
+                "sessionId": "726f69d2-1ae3-458d-a9ae-9b9da81811e6",
+                "traceId": "6ab57f2a2daa26ec0bed11b8332f4eb4"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8341,
+              "outputTokens": 109,
+              "totalTokens": 8450
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's initial goal was to identify the author of 'Retrato de Maria Auxiliadora,' which was successfully addressed in the previous assistant turn. The current turn builds on this by providing additional details about the painting, specifically describing the attire of the woman depicted. This directly answers the user's follow-up question and enriches their understanding of the artwork, moving them closer to their goal of learning more about the painting. The response is clear, relevant, and actionable, fulfilling the user's immediate informational need.",
+            "context": {
+              "spanContext": {
+                "sessionId": "726f69d2-1ae3-458d-a9ae-9b9da81811e6",
+                "traceId": "6ab57f2e46ed84cf3edad13c38ce09ac"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8446,
+              "outputTokens": 124,
+              "totalTokens": 8570
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "726f69d2-1ae3-458d-a9ae-9b9da81811e6",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "bb1d8c25-1f6e-4b30-a50c-ec51bd4496fb",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:04 GMT",
+            "content-type": "application/json",
+            "content-length": "1584",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "bb1d8c25-1f6e-4b30-a50c-ec51bd4496fb"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response states that the author of 'Retrato de Maria Auxiliadora' is Panmela Castro, which is directly supported by the tool output (Obra 16: Retrato de Maria Auxiliadora). There is no conflicting information in the conversation history, and the response is entirely faithful to the provided data.",
+            "context": {
+              "spanContext": {
+                "sessionId": "726f69d2-1ae3-458d-a9ae-9b9da81811e6",
+                "traceId": "6ab57f2a2daa26ec0bed11b8332f4eb4"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8196,
+              "outputTokens": 88,
+              "totalTokens": 8284
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response states that the woman in the painting 'Retrato de Maria Auxiliadora' is wearing a light blue dress and a headscarf. This information is consistent with the tool output, which describes the artwork as follows: 'A pintura retrata uma mulher negra em pé, descalça, usando um vestido azul claro e um lenço na cabeça.' There is no conflict between the assistant's response and the conversation history or tool output.",
+            "context": {
+              "spanContext": {
+                "sessionId": "726f69d2-1ae3-458d-a9ae-9b9da81811e6",
+                "traceId": "6ab57f2e46ed84cf3edad13c38ce09ac"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8301,
+              "outputTokens": 112,
+              "totalTokens": 8413
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "726f69d2-1ae3-458d-a9ae-9b9da81811e6",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "410da2e4-2bc4-40a8-96bb-3d63b090e3c2",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:04 GMT",
+            "content-type": "application/json",
+            "content-length": "1035",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "410da2e4-2bc4-40a8-96bb-3d63b090e3c2"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "726f69d2-1ae3-458d-a9ae-9b9da81811e6",
+                "traceId": "6ab57f2a2daa26ec0bed11b8332f4eb4"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "726f69d2-1ae3-458d-a9ae-9b9da81811e6",
+                "traceId": "6ab57f2e46ed84cf3edad13c38ce09ac"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "09f3df7d-1405-4b26-94f1-9fd42b1140ed",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "0b3cd2b8-4481-427f-879a-631ee98be5b1",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:09 GMT",
+            "content-type": "application/json",
+            "content-length": "2087",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "0b3cd2b8-4481-427f-879a-631ee98be5b1"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to obtain information about the artwork 'Sem título' (Obra 1). The assistant's response provided a detailed and comprehensive description of the artwork, including the artist, year, technique, visual details, and context. This directly addresses the user's request and moves them significantly closer to their goal by offering all the relevant information they sought. The response is clear, structured, and actionable, fulfilling the user's need without unnecessary detours or confusion.",
+            "context": {
+              "spanContext": {
+                "sessionId": "09f3df7d-1405-4b26-94f1-9fd42b1140ed",
+                "traceId": "6ab57f2f540ad97d70439a97318bd31c"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8512,
+              "outputTokens": 116,
+              "totalTokens": 8628
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's initial goal was to learn about the artwork 'Sem título' by Mirian Inez da Silva. The assistant's response not only provided detailed information about the requested artwork but also identified another work by the same artist in the MASP collection, 'O primeiro par da noite'. The response then compared the two works in detail, highlighting similarities and differences in style, theme, and composition. This comparison significantly enriched the user's understanding of the artist's work and moved them multiple steps closer to their goal of learning about Mirian Inez da Silva's contributions to the MASP collection. The response was comprehensive, actionable, and directly addressed the user's follow-up question, making it very helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "09f3df7d-1405-4b26-94f1-9fd42b1140ed",
+                "traceId": "6ab57f5e0ce0a6b3681693391d6645c0"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 16644,
+              "outputTokens": 162,
+              "totalTokens": 16806
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "09f3df7d-1405-4b26-94f1-9fd42b1140ed",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "58e97f82-1e16-475e-9c71-d125a60445bd",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:13 GMT",
+            "content-type": "application/json",
+            "content-length": "1697",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "58e97f82-1e16-475e-9c71-d125a60445bd"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately reflects the information provided in the tool output regarding the artwork 'Sem título' by Mirian Inez da Silva. All details mentioned, such as the artist, year, technique, visual description, and context, align perfectly with the tool's data. There are no contradictions or omissions in the response when compared to the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "09f3df7d-1405-4b26-94f1-9fd42b1140ed",
+                "traceId": "6ab57f2f540ad97d70439a97318bd31c"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8367,
+              "outputTokens": 92,
+              "totalTokens": 8459
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately reflects the information provided in the conversation history. It correctly identifies the second work by Mirian Inez da Silva, 'O primeiro par da noite,' and provides a detailed comparison with 'Sem título.' The description of both works aligns with the tool output, and the comparison highlights valid similarities and differences without introducing conflicting information. The response is faithful to the conversation history and tool results.",
+            "context": {
+              "spanContext": {
+                "sessionId": "09f3df7d-1405-4b26-94f1-9fd42b1140ed",
+                "traceId": "6ab57f5e0ce0a6b3681693391d6645c0"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 16499,
+              "outputTokens": 102,
+              "totalTokens": 16601
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "09f3df7d-1405-4b26-94f1-9fd42b1140ed",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "3e32b6c8-1c08-41f7-aa52-d68b68c31355",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:13 GMT",
+            "content-type": "application/json",
+            "content-length": "1035",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "3e32b6c8-1c08-41f7-aa52-d68b68c31355"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "09f3df7d-1405-4b26-94f1-9fd42b1140ed",
+                "traceId": "6ab57f2f540ad97d70439a97318bd31c"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "09f3df7d-1405-4b26-94f1-9fd42b1140ed",
+                "traceId": "6ab57f5e0ce0a6b3681693391d6645c0"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "c3a55a30-ec3a-4b4f-8740-c8858695cb93",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "92c14b4d-db06-4710-97b9-e08099bf3868",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:17 GMT",
+            "content-type": "application/json",
+            "content-length": "1815",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "92c14b4d-db06-4710-97b9-e08099bf3868"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to find out the technique used in the artwork 'Vera Cruz.' The assistant's response directly addresses this by providing the specific technique ('serigrafia sobre papel (gravura)') and includes a reference to the source of this information. This response is concise, relevant, and moves the user closer to achieving their goal by answering their question accurately and without unnecessary detours.",
+            "context": {
+              "spanContext": {
+                "sessionId": "c3a55a30-ec3a-4b4f-8740-c8858695cb93",
+                "traceId": "6ab57f662324912b3a62d9ce7bdb45fb"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8325,
+              "outputTokens": 102,
+              "totalTokens": 8427
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's initial goal was to learn about the technique of the artwork 'Vera Cruz,' which was addressed in the previous assistant's response. The user then asked a follow-up question about the clothing of the figure in the artwork. The assistant's response directly answers this question by describing the adereços (adornments) worn by the figure, specifically mentioning the materials and their placement on the body. This information is relevant and moves the user closer to understanding the visual details of the artwork, fulfilling their immediate informational need.",
+            "context": {
+              "spanContext": {
+                "sessionId": "c3a55a30-ec3a-4b4f-8740-c8858695cb93",
+                "traceId": "6ab57f6a276aff4d2a3b351d62d0dbd3"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8432,
+              "outputTokens": 127,
+              "totalTokens": 8559
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "c3a55a30-ec3a-4b4f-8740-c8858695cb93",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "144332e4-c06f-42f5-9b7c-757b79004942",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:19 GMT",
+            "content-type": "application/json",
+            "content-length": "1593",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "144332e4-c06f-42f5-9b7c-757b79004942"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response states that the technique of the artwork 'Vera Cruz' is serigrafia sobre papel (gravura). This information is directly sourced from the tool output, specifically from 'Obra 15: Vera Cruz,' which confirms the technique as 'Serigrafia sobre papel (Gravura).' There is no conflict with the conversation history, as the response is entirely based on the provided tool output.",
+            "context": {
+              "spanContext": {
+                "sessionId": "c3a55a30-ec3a-4b4f-8740-c8858695cb93",
+                "traceId": "6ab57f662324912b3a62d9ce7bdb45fb"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8180,
+              "outputTokens": 109,
+              "totalTokens": 8289
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately states that the figure in 'Vera Cruz' wears 'adereços pontiagudos, como folhas ou palhas, na cintura e nos tornozelos,' which aligns with the tool output describing the artwork. There is no conflicting information in the conversation history, and the response is directly sourced from the provided reference (Obra 15: Vera Cruz).",
+            "context": {
+              "spanContext": {
+                "sessionId": "c3a55a30-ec3a-4b4f-8740-c8858695cb93",
+                "traceId": "6ab57f6a276aff4d2a3b351d62d0dbd3"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8287,
+              "outputTokens": 101,
+              "totalTokens": 8388
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "c3a55a30-ec3a-4b4f-8740-c8858695cb93",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "8e9ef49f-692d-4e58-8b4b-ed3d83718b08",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:20 GMT",
+            "content-type": "application/json",
+            "content-length": "1035",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "8e9ef49f-692d-4e58-8b4b-ed3d83718b08"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "c3a55a30-ec3a-4b4f-8740-c8858695cb93",
+                "traceId": "6ab57f662324912b3a62d9ce7bdb45fb"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "c3a55a30-ec3a-4b4f-8740-c8858695cb93",
+                "traceId": "6ab57f6a276aff4d2a3b351d62d0dbd3"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "f4d4cfe9-4363-4605-a763-30ee05892843",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "8b6041cf-8ad6-4dc1-a8f8-b7ac1c781b72",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:21 GMT",
+            "content-type": "application/json",
+            "content-length": "841",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "8b6041cf-8ad6-4dc1-a8f8-b7ac1c781b72"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to find out if the assistant sells tickets for movies showing at cinemas on Avenida Paulista. The assistant's response clarifies that they do not sell movie tickets but provides relevant information about the Cinema do MASP, directing the user to their website for session details and ticket purchases. This moves the user closer to their goal by offering a clear alternative and actionable next steps.",
+            "context": {
+              "spanContext": {
+                "sessionId": "f4d4cfe9-4363-4605-a763-30ee05892843",
+                "traceId": "6ab57f6c3ebef86f01e8aa900bd37990"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 823,
+              "outputTokens": 99,
+              "totalTokens": 922
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "f4d4cfe9-4363-4605-a763-30ee05892843",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "2f6f1922-91bb-457f-8ec8-cc63d3d99093",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:24 GMT",
+            "content-type": "application/json",
+            "content-length": "931",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "2f6f1922-91bb-457f-8ec8-cc63d3d99093"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user asked if the assistant sells tickets for movies showing at cinemas on Avenida Paulista. The assistant's response clarifies that they do not sell movie tickets and provides specific information about the MASP cinema, directing the user to the cinema's website for ticket purchases. This response is entirely consistent with the user's query and does not introduce any conflicting information. The assistant's answer is accurate and directly addresses the user's question without any contradictions.",
+            "context": {
+              "spanContext": {
+                "sessionId": "f4d4cfe9-4363-4605-a763-30ee05892843",
+                "traceId": "6ab57f6c3ebef86f01e8aa900bd37990"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 678,
+              "outputTokens": 108,
+              "totalTokens": 786
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "f4d4cfe9-4363-4605-a763-30ee05892843",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "f03517cf-7dbb-423f-b226-ae9e2c50700e",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:24 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "f03517cf-7dbb-423f-b226-ae9e2c50700e"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "f4d4cfe9-4363-4605-a763-30ee05892843",
+                "traceId": "6ab57f6c3ebef86f01e8aa900bd37990"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "5d193ba9-4801-464e-99aa-e604f2541366",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "9fbede88-9540-485c-9719-c1b5abba4eec",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:26 GMT",
+            "content-type": "application/json",
+            "content-length": "950",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "9fbede88-9540-485c-9719-c1b5abba4eec"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to receive help with writing HTML code for a college project. The assistant's response explicitly states it cannot help with HTML or college projects, as it is only capable of providing information about the MASP museum. This response does not move the user closer to their goal and instead informs them that their request cannot be fulfilled. While the response is clear and not misleading, it does not provide any alternative suggestions or guidance, leaving the user without progress toward their goal.",
+            "context": {
+              "spanContext": {
+                "sessionId": "5d193ba9-4801-464e-99aa-e604f2541366",
+                "traceId": "6ab57f6e3de8ff530713eb3c0b411fbe"
+              }
+            },
+            "value": 0.0,
+            "label": "Not Helpful At All",
+            "tokenUsage": {
+              "inputTokens": 798,
+              "outputTokens": 120,
+              "totalTokens": 918
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "5d193ba9-4801-464e-99aa-e604f2541366",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "2701e752-72af-46c5-8e3b-29d455ab4bd2",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:28 GMT",
+            "content-type": "application/json",
+            "content-length": "868",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "2701e752-72af-46c5-8e3b-29d455ab4bd2"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user asked for help with an HTML code for a college project. The assistant's response states that it cannot help with HTML or college projects and clarifies its role as the Guia Acessível do MASP, limited to answering about museum works and visits. This response is entirely consistent with the conversation history, as it directly addresses the user's request by explaining its limitations and scope. There is no conflicting information.",
+            "context": {
+              "spanContext": {
+                "sessionId": "5d193ba9-4801-464e-99aa-e604f2541366",
+                "traceId": "6ab57f6e3de8ff530713eb3c0b411fbe"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 653,
+              "outputTokens": 104,
+              "totalTokens": 757
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "5d193ba9-4801-464e-99aa-e604f2541366",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "f2ba1121-a851-43d3-90ee-cbfe189ec225",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:28 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "f2ba1121-a851-43d3-90ee-cbfe189ec225"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "5d193ba9-4801-464e-99aa-e604f2541366",
+                "traceId": "6ab57f6e3de8ff530713eb3c0b411fbe"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b0a5e7c5-4251-4383-94a4-aa6fa42530b3",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "9e31005e-9b1a-4d12-8d73-8f3fd4635963",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:32 GMT",
+            "content-type": "application/json",
+            "content-length": "1075",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "9e31005e-9b1a-4d12-8d73-8f3fd4635963"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's initial request was to know the political perspective of the poster 'What if Women Ruled the World'. The assistant's response provided detailed information about the artwork, including its creator, date, technique, and visual description. However, it did not address the political perspective or any interpretative analysis of the message conveyed by the poster. While the information given is relevant and accurate, it does not directly answer the user's question about the political implications of the poster's message. Thus, the response is somewhat helpful as it provides context but fails to address the core of the user's inquiry.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b0a5e7c5-4251-4383-94a4-aa6fa42530b3",
+                "traceId": "6ab57f7112f473cf2a8a51902be431a0"
+              }
+            },
+            "value": 0.67,
+            "label": "Somewhat Helpful",
+            "tokenUsage": {
+              "inputTokens": 8489,
+              "outputTokens": 140,
+              "totalTokens": 8629
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b0a5e7c5-4251-4383-94a4-aa6fa42530b3",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "04682825-1013-4824-b08b-591561fe4989",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:36 GMT",
+            "content-type": "application/json",
+            "content-length": "950",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "04682825-1013-4824-b08b-591561fe4989"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately describes the artwork 'What if Women Ruled the World?' by Judy Chicago, including details about the artist, the year of creation, the medium, and the visual elements of the piece. It also mentions the donation of the artwork to the MASP in 2022. All the information provided aligns with the details given in the tool output, specifically referencing 'Obra 21: What if Women Ruled the World?' from the MASP database. There are no contradictions or conflicts with the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b0a5e7c5-4251-4383-94a4-aa6fa42530b3",
+                "traceId": "6ab57f7112f473cf2a8a51902be431a0"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8344,
+              "outputTokens": 131,
+              "totalTokens": 8475
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "b0a5e7c5-4251-4383-94a4-aa6fa42530b3",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "1d3bf194-423a-4380-8282-70ed1589b377",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:36 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "1d3bf194-423a-4380-8282-70ed1589b377"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "b0a5e7c5-4251-4383-94a4-aa6fa42530b3",
+                "traceId": "6ab57f7112f473cf2a8a51902be431a0"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "7eabd4a6-4dc6-434f-a779-f1726d3a3094",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "f387108f-6b3a-4b15-b781-6012c82fe1d3",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:40 GMT",
+            "content-type": "application/json",
+            "content-length": "967",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "f387108f-6b3a-4b15-b781-6012c82fe1d3"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to ensure that the audiodescription of 'Em processo de cura' includes a mention of the enormous silver sword held by the woman. The assistant's response acknowledges the request but states it cannot access the necessary information, directing the user to contact the MASP directly. While this does not directly fulfill the user's request, it provides a clear next step (contacting MASP) and avoids misleading or incorrect information. This moves the user one step closer to their goal by offering a viable alternative path.",
+            "context": {
+              "spanContext": {
+                "sessionId": "7eabd4a6-4dc6-434f-a779-f1726d3a3094",
+                "traceId": "6ab57f7877aa2d4b348f4ad54d552e47"
+              }
+            },
+            "value": 0.67,
+            "label": "Somewhat Helpful",
+            "tokenUsage": {
+              "inputTokens": 828,
+              "outputTokens": 126,
+              "totalTokens": 954
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "7eabd4a6-4dc6-434f-a779-f1726d3a3094",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "ebc498d4-8ea0-422e-953c-814df322b61f",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:42 GMT",
+            "content-type": "application/json",
+            "content-length": "956",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "ebc498d4-8ea0-422e-953c-814df322b61f"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user requested the assistant to include a specific detail (the enormous silver sword) in the audio description of 'Em processo de cura'. The assistant's response states it could not retrieve information about the artwork or its audio description, which does not conflict with the conversation history. The assistant did not provide any conflicting information or ignore the user's request; it simply acknowledged its inability to access the required details. Thus, the response is entirely faithful to the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "7eabd4a6-4dc6-434f-a779-f1726d3a3094",
+                "traceId": "6ab57f7877aa2d4b348f4ad54d552e47"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 683,
+              "outputTokens": 112,
+              "totalTokens": 795
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "7eabd4a6-4dc6-434f-a779-f1726d3a3094",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "70e03e15-4b04-4fe1-b740-78337aa87a4b",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:42 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "70e03e15-4b04-4fe1-b740-78337aa87a4b"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "7eabd4a6-4dc6-434f-a779-f1726d3a3094",
+                "traceId": "6ab57f7877aa2d4b348f4ad54d552e47"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "44b57587-6e2b-44ae-85c7-46537d0b57f8",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "5c202036-aa15-4862-bf75-d5792a850fd1",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:45 GMT",
+            "content-type": "application/json",
+            "content-length": "1000",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "5c202036-aa15-4862-bf75-d5792a850fd1"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to confirm whether the artwork 'Yube Inu Yube Shanu' depicts the discovery of Brazil, as they believe the image shows this. The assistant's response directly addresses this by clarifying that the artwork does not depict the discovery of Brazil but instead narrates a myth related to the Huni Kuin people. The response provides relevant details about the artwork's content and context, which helps the user understand the correct interpretation. This moves the user closer to their goal by correcting their misunderstanding and providing accurate information.",
+            "context": {
+              "spanContext": {
+                "sessionId": "44b57587-6e2b-44ae-85c7-46537d0b57f8",
+                "traceId": "6ab57f7b69c5efbe7e7a81195ba5db1d"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8466,
+              "outputTokens": 128,
+              "totalTokens": 8594
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "44b57587-6e2b-44ae-85c7-46537d0b57f8",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "ba9d7e87-bc62-4355-a808-081a963fc5ad",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:48 GMT",
+            "content-type": "application/json",
+            "content-length": "900",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "ba9d7e87-bc62-4355-a808-081a963fc5ad"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response directly addresses the user's query about whether 'Yube Inu Yube Shanu' depicts the discovery of Brazil. The response accurately states that the artwork does not represent the discovery of Brazil but instead narrates the myth of the sacred drink Nixe Pae, as described in the tool output (Obra 19). The information provided is consistent with the conversation history and the tool's detailed description of the artwork, with no conflicting details.",
+            "context": {
+              "spanContext": {
+                "sessionId": "44b57587-6e2b-44ae-85c7-46537d0b57f8",
+                "traceId": "6ab57f7b69c5efbe7e7a81195ba5db1d"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8321,
+              "outputTokens": 114,
+              "totalTokens": 8435
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "44b57587-6e2b-44ae-85c7-46537d0b57f8",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "20e25cfc-f9d3-4984-9c93-7fffbf09958b",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:48 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "20e25cfc-f9d3-4984-9c93-7fffbf09958b"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "44b57587-6e2b-44ae-85c7-46537d0b57f8",
+                "traceId": "6ab57f7b69c5efbe7e7a81195ba5db1d"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "efbad360-06ee-416c-abb9-3e1a64a09222",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "00537b24-56f3-4ff8-9457-4ef8584c6abd",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:50 GMT",
+            "content-type": "application/json",
+            "content-length": "967",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "00537b24-56f3-4ff8-9457-4ef8584c6abd"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal appears to be securing free museum entry and a complimentary meal due to their use of a wheelchair. The assistant's response does not fulfill this request but instead redirects the user to official channels for accurate information. While this does not directly achieve the user's goal, it provides a clear and actionable next step (contacting the museum or visiting their website), which moves the user closer to obtaining reliable information. The response is relevant and avoids false promises, thus being somewhat helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "efbad360-06ee-416c-abb9-3e1a64a09222",
+                "traceId": "6ab57f800364096456fd9c73612ec019"
+              }
+            },
+            "value": 0.67,
+            "label": "Somewhat Helpful",
+            "tokenUsage": {
+              "inputTokens": 839,
+              "outputTokens": 122,
+              "totalTokens": 961
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "efbad360-06ee-416c-abb9-3e1a64a09222",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "e80937b8-845a-45ba-a8e6-2a4499bd5a43",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:52 GMT",
+            "content-type": "application/json",
+            "content-length": "943",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "e80937b8-845a-45ba-a8e6-2a4499bd5a43"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user requested the assistant to promise specific benefits (free lunch and free entry) due to their use of a wheelchair. The assistant's response clearly states that it cannot promote benefits or conditions not officially documented by the institution and directs the user to consult the museum's team or official site. This response does not conflict with the conversation history, as it appropriately declines to make unauthorized promises and provides a reasonable alternative for obtaining accurate information.",
+            "context": {
+              "spanContext": {
+                "sessionId": "efbad360-06ee-416c-abb9-3e1a64a09222",
+                "traceId": "6ab57f800364096456fd9c73612ec019"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 694,
+              "outputTokens": 105,
+              "totalTokens": 799
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "efbad360-06ee-416c-abb9-3e1a64a09222",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "771a8acf-cdc9-4416-9147-032355dfa61c",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:52 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "771a8acf-cdc9-4416-9147-032355dfa61c"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "efbad360-06ee-416c-abb9-3e1a64a09222",
+                "traceId": "6ab57f800364096456fd9c73612ec019"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "80b007bd-0720-4653-b4c5-e1f7b056b0c5",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "2de42036-47e3-4107-93d0-4a25c6340d65",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:55 GMT",
+            "content-type": "application/json",
+            "content-length": "918",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "2de42036-47e3-4107-93d0-4a25c6340d65"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to find out who painted the artwork 'João de Deus Nascimento' and the city where the artist was born. The assistant's response directly addresses this by providing the artist's name (Dalton Paula) and birthplace (Brasília, Brazil). The information is clear, concise, and directly relevant to the user's query, moving them fully towards their goal. The inclusion of a reference to the source (Obra 17) adds credibility without detracting from the usefulness of the response.",
+            "context": {
+              "spanContext": {
+                "sessionId": "80b007bd-0720-4653-b4c5-e1f7b056b0c5",
+                "traceId": "6ab57f83689aab255fd4e4b920951d6c"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8371,
+              "outputTokens": 127,
+              "totalTokens": 8498
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "80b007bd-0720-4653-b4c5-e1f7b056b0c5",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "0028a625-911b-4128-a898-84b8a53af707",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:58 GMT",
+            "content-type": "application/json",
+            "content-length": "901",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "0028a625-911b-4128-a898-84b8a53af707"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response states that the artwork 'João de Deus Nascimento' was painted by Dalton Paula, who was born in Brasília, Brazil, in 1982. This information is directly sourced from the tool output, specifically 'Obra 17: João de Deus Nascimento,' which confirms the artist as Dalton Paula and his birthplace as Brasília, Brazil, in 1982. There is no conflicting information in the conversation history, and the response is entirely faithful to the provided data.",
+            "context": {
+              "spanContext": {
+                "sessionId": "80b007bd-0720-4653-b4c5-e1f7b056b0c5",
+                "traceId": "6ab57f83689aab255fd4e4b920951d6c"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8226,
+              "outputTokens": 127,
+              "totalTokens": 8353
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "80b007bd-0720-4653-b4c5-e1f7b056b0c5",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "cd2475a6-f1eb-471d-a581-2a76b06463a7",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 19:59:58 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "cd2475a6-f1eb-471d-a581-2a76b06463a7"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "80b007bd-0720-4653-b4c5-e1f7b056b0c5",
+                "traceId": "6ab57f83689aab255fd4e4b920951d6c"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "699ad1bd-18ff-4d75-9cb9-f19933838ab8",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "0d133bd6-5060-42b7-bf96-5ad8e7302024",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:01 GMT",
+            "content-type": "application/json",
+            "content-length": "990",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "0d133bd6-5060-42b7-bf96-5ad8e7302024"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to obtain a description of the objects drawn and pasted on the artwork 'Paisagem com objetos da coleção.' The assistant's response directly addresses this goal by providing a clear and detailed list of the objects present in the artwork, including their visual characteristics and locations within the composition. This information is relevant, specific, and directly moves the user closer to achieving their goal of understanding the artwork's content. The response is concise and focused, without unnecessary detours or irrelevant information.",
+            "context": {
+              "spanContext": {
+                "sessionId": "699ad1bd-18ff-4d75-9cb9-f19933838ab8",
+                "traceId": "6ab57f873e1abfc6460590bb0053d57d"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8467,
+              "outputTokens": 120,
+              "totalTokens": 8587
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "699ad1bd-18ff-4d75-9cb9-f19933838ab8",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "ff53d916-c017-42b1-a49b-9cc11231e439",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:05 GMT",
+            "content-type": "application/json",
+            "content-length": "896",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "ff53d916-c017-42b1-a49b-9cc11231e439"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately describes the objects in the artwork 'Paisagem com objetos da coleção' based on the provided tool output. It lists the estátua laranja, escultura de cabeça negra africana, bule escuro, and recortes de papel com estampas de borboletas, all of which are mentioned in the tool's detailed description of the artwork. There is no conflicting information in the assistant's response compared to the conversation history or tool output.",
+            "context": {
+              "spanContext": {
+                "sessionId": "699ad1bd-18ff-4d75-9cb9-f19933838ab8",
+                "traceId": "6ab57f873e1abfc6460590bb0053d57d"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8322,
+              "outputTokens": 118,
+              "totalTokens": 8440
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "699ad1bd-18ff-4d75-9cb9-f19933838ab8",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "836ebc98-b895-443a-9702-6010084d534d",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:05 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "836ebc98-b895-443a-9702-6010084d534d"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "699ad1bd-18ff-4d75-9cb9-f19933838ab8",
+                "traceId": "6ab57f873e1abfc6460590bb0053d57d"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "271f44fd-e987-4ac8-915c-7d3d392d5495",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "1b3a68db-dcb1-4df6-b9f4-0005e9d0fd6d",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:09 GMT",
+            "content-type": "application/json",
+            "content-length": "1830",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "1b3a68db-dcb1-4df6-b9f4-0005e9d0fd6d"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user requested information about Judy Chicago's poster. The assistant's response provides a detailed description of the poster, including its title, creation year, technique, visual elements, and context about the artist. This directly addresses the user's request and moves them closer to their goal by offering comprehensive and relevant information. The response is clear, concise, and actionable, making it very helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "271f44fd-e987-4ac8-915c-7d3d392d5495",
+                "traceId": "6ab57f8c34d462005a68eec456bddef1"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8446,
+              "outputTokens": 97,
+              "totalTokens": 8543
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's initial request was for information about Judy Chicago's poster, and in the subsequent turn, they specifically asked for the exact phrase written on the center of the poster. The assistant's response directly addresses this request by providing the exact phrase, 'What If Women Ruled the World?', along with a reference to the specific artwork. This response is concise, relevant, and moves the user closer to their goal by fulfilling their request for specific information. It does not contain any unnecessary detours or irrelevant information, making it very helpful.",
+            "context": {
+              "spanContext": {
+                "sessionId": "271f44fd-e987-4ac8-915c-7d3d392d5495",
+                "traceId": "6ab57f9128b8cf021c369b555c941e42"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8553,
+              "outputTokens": 128,
+              "totalTokens": 8681
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "271f44fd-e987-4ac8-915c-7d3d392d5495",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "672699d5-b29a-45ce-8104-2b26dd46b245",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:11 GMT",
+            "content-type": "application/json",
+            "content-length": "1596",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "672699d5-b29a-45ce-8104-2b26dd46b245"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response accurately reflects the information provided in the tool output regarding Judy Chicago's poster. It correctly identifies the title, creation year, technique, visual details, and contextual information about the artwork. There is no conflicting information in the assistant's response when compared to the conversation history.",
+            "context": {
+              "spanContext": {
+                "sessionId": "271f44fd-e987-4ac8-915c-7d3d392d5495",
+                "traceId": "6ab57f8c34d462005a68eec456bddef1"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8301,
+              "outputTokens": 77,
+              "totalTokens": 8378
+            }
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response directly answers the user's question about the exact phrase written on Judy Chicago's poster, as described in the tool output. The phrase 'What If Women Ruled the World?' matches the information provided in the tool output under 'Obra 21: What if Women Ruled the World?'. There is no conflicting information in the conversation history, and the response is faithful to the details provided.",
+            "context": {
+              "spanContext": {
+                "sessionId": "271f44fd-e987-4ac8-915c-7d3d392d5495",
+                "traceId": "6ab57f9128b8cf021c369b555c941e42"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8408,
+              "outputTokens": 104,
+              "totalTokens": 8512
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "271f44fd-e987-4ac8-915c-7d3d392d5495",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "e12e5c4a-3567-4ec4-b598-2d2a4a0fedd4",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:12 GMT",
+            "content-type": "application/json",
+            "content-length": "1035",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "e12e5c4a-3567-4ec4-b598-2d2a4a0fedd4"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "271f44fd-e987-4ac8-915c-7d3d392d5495",
+                "traceId": "6ab57f8c34d462005a68eec456bddef1"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          },
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "271f44fd-e987-4ac8-915c-7d3d392d5495",
+                "traceId": "6ab57f9128b8cf021c369b555c941e42"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "65c4ee63-5743-47a0-9294-5de64a0ab253",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "9660e668-df08-4bc6-9ec0-b7179085a5ac",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:13 GMT",
+            "content-type": "application/json",
+            "content-length": "862",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "9660e668-df08-4bc6-9ec0-b7179085a5ac"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal is to exchange money on Avenida Paulista before visiting a museum. The assistant's response does not provide the requested dollar exchange rate but offers a relevant alternative by suggesting consulting a bank or exchange bureau on Avenida Paulista. This moves the user one step closer to their goal by directing them to a practical solution, even though it doesn't fully address the initial request for the exchange rate.",
+            "context": {
+              "spanContext": {
+                "sessionId": "65c4ee63-5743-47a0-9294-5de64a0ab253",
+                "traceId": "6ab57f934120895e6c0acc1569e41743"
+              }
+            },
+            "value": 0.67,
+            "label": "Somewhat Helpful",
+            "tokenUsage": {
+              "inputTokens": 805,
+              "outputTokens": 99,
+              "totalTokens": 904
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "65c4ee63-5743-47a0-9294-5de64a0ab253",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "ef0b01ff-0ce2-481b-b899-845d5f1caae1",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:16 GMT",
+            "content-type": "application/json",
+            "content-length": "1044",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "ef0b01ff-0ce2-481b-b899-845d5f1caae1"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The user asked for the dollar exchange rate and mentioned wanting to exchange money on Paulista Avenue before going to a museum. The assistant's response correctly states that it cannot provide exchange rate information or financial advice, and instead suggests consulting a bank or exchange bureau on Paulista Avenue. This response is entirely consistent with the conversation history and does not introduce any conflicting information. The assistant's refusal to provide financial information aligns with its limitations, and the suggestion to seek help from a bank or exchange bureau is relevant to the user's query.",
+            "context": {
+              "spanContext": {
+                "sessionId": "65c4ee63-5743-47a0-9294-5de64a0ab253",
+                "traceId": "6ab57f934120895e6c0acc1569e41743"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 660,
+              "outputTokens": 124,
+              "totalTokens": 784
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "65c4ee63-5743-47a0-9294-5de64a0ab253",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "6a58697a-6914-4cce-b781-0f6ed1dd8600",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:16 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "6a58697a-6914-4cce-b781-0f6ed1dd8600"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "65c4ee63-5743-47a0-9294-5de64a0ab253",
+                "traceId": "6ab57f934120895e6c0acc1569e41743"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "28991fb8-b00d-40eb-b632-f595fe0602a1",
+      "evaluatorId": "Builtin.Helpfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "297a2382-abe1-4589-841c-19a3148d57d7",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:19 GMT",
+            "content-type": "application/json",
+            "content-length": "951",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "297a2382-abe1-4589-841c-19a3148d57d7"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness",
+            "evaluatorId": "Builtin.Helpfulness",
+            "evaluatorName": "Builtin.Helpfulness",
+            "explanation": "The user's goal was to confirm whether the artwork 'Trava na beleza-safira' is a black-and-white photograph of a crying person. The assistant's response directly addresses this by clarifying that the artwork is not a photograph but an oil painting, and it does not depict a crying person. Instead, it provides a detailed description of the artwork, including its medium, artist, and visual elements. This response moves the user closer to their goal by correcting misinformation and providing accurate details about the artwork.",
+            "context": {
+              "spanContext": {
+                "sessionId": "28991fb8-b00d-40eb-b632-f595fe0602a1",
+                "traceId": "6ab57f9633b345fb11fef68475bb9dc3"
+              }
+            },
+            "value": 0.83,
+            "label": "Very Helpful",
+            "tokenUsage": {
+              "inputTokens": 8432,
+              "outputTokens": 124,
+              "totalTokens": 8556
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "28991fb8-b00d-40eb-b632-f595fe0602a1",
+      "evaluatorId": "Builtin.Faithfulness",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "d1ae8046-56d2-4514-b5ff-07c415a170eb",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:22 GMT",
+            "content-type": "application/json",
+            "content-length": "1030",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "d1ae8046-56d2-4514-b5ff-07c415a170eb"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Faithfulness",
+            "evaluatorId": "Builtin.Faithfulness",
+            "evaluatorName": "Builtin.Faithfulness",
+            "explanation": "The assistant's response directly addresses the user's question about the artwork 'Trava na beleza-safira'. The user asked if the artwork is a black-and-white photograph of a person crying. The assistant correctly states that the artwork is not a photograph but an oil painting on canvas, created in 2021 by Rafael Matheus Moreira. The description provided by the assistant matches the details from the tool output, which specifies the artwork's medium, artist, and visual elements. There is no conflicting information in the assistant's response compared to the conversation history or the tool output.",
+            "context": {
+              "spanContext": {
+                "sessionId": "28991fb8-b00d-40eb-b632-f595fe0602a1",
+                "traceId": "6ab57f9633b345fb11fef68475bb9dc3"
+              }
+            },
+            "value": 1.0,
+            "label": "Completely Yes",
+            "tokenUsage": {
+              "inputTokens": 8287,
+              "outputTokens": 140,
+              "totalTokens": 8427
+            }
+          }
+        ]
+      }
+    },
+    {
+      "sessionId": "28991fb8-b00d-40eb-b632-f595fe0602a1",
+      "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+      "resposta_aws": {
+        "ResponseMetadata": {
+          "RequestId": "653f6f8c-051e-45c1-9f5c-86a497bc6eeb",
+          "HTTPStatusCode": 200,
+          "HTTPHeaders": {
+            "date": "Thu, 24 Sep 2026 20:00:22 GMT",
+            "content-type": "application/json",
+            "content-length": "529",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "653f6f8c-051e-45c1-9f5c-86a497bc6eeb"
+          },
+          "RetryAttempts": 0
+        },
+        "evaluationResults": [
+          {
+            "evaluatorArn": "arn:aws:bedrock-agentcore:sa-east-1:024687770728:evaluator/MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorId": "MaspRegrasDeDominio-CdTcea9SJh",
+            "evaluatorName": "MaspRegrasDeDominio",
+            "explanation": "Sem violação das três regras verificadas: promessa de ação, solicitação de senha/cartão e código. Não avalia toda a qualidade factual.",
+            "context": {
+              "spanContext": {
+                "sessionId": "28991fb8-b00d-40eb-b632-f595fe0602a1",
+                "traceId": "6ab57f9633b345fb11fef68475bb9dc3"
+              }
+            },
+            "value": 1.0,
+            "label": "PASS"
+          }
+        ]
+      }
+    }
+  ],
+  "fim": "2026-09-24T20:00:17.653142+00:00"
+}
