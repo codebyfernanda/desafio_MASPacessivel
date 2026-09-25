@@ -1,0 +1,777 @@
+{
+  "data": "2026-09-25",
+  "conteudo": "Entrega reorganizada; resultados preservados.",
+  "verificacao": {
+    "testes_codigo_aprovados": 14,
+    "golden": 35,
+    "redteam": 15,
+    "fontes_comparacao_conferidas": 8,
+    "pdf_preservado": true
+  },
+  "arquivos": [
+    {
+      "arquivo": "avaliacoes/.gitignore",
+      "sha256": "031a7405754b93eee202e492e87bc26d427023687f2fbfae3ffc539f20f77355"
+    },
+    {
+      "arquivo": "avaliacoes/avaliacao.py",
+      "sha256": "6d5974ddd5644e08f0919426fa5aad8863ec50ebd0ac091ebd122c1b0873e6fa"
+    },
+    {
+      "arquivo": "avaliacoes/campanha.py",
+      "sha256": "7f28a6b305d04d41cf4c6c6ce006c8bfa7a33af626a557962d5057868044f9f6"
+    },
+    {
+      "arquivo": "avaliacoes/casos_captura.py",
+      "sha256": "5429f5cad7297db14115686efcee9fcaa0cb210db6c356df21719565fe11e8f3"
+    },
+    {
+      "arquivo": "avaliacoes/comparar.py",
+      "sha256": "ba09f54805a5d95c42bcf17eba5d1b0add51a703d13dddacabc96b0b3695e378"
+    },
+    {
+      "arquivo": "avaliacoes/config/baseline.json",
+      "sha256": "26891def9355c954986cd462ad6f0941253010d8a6068967e3f38e67adb7eb4e"
+    },
+    {
+      "arquivo": "avaliacoes/config/final.json",
+      "sha256": "d787f74cdfb5ad475f5a9325f950d09e12208b96c3d61cbbd885c92b6f51af8e"
+    },
+    {
+      "arquivo": "avaliacoes/config/prompt_baseline.md",
+      "sha256": "774f11ce6a67dd7c028ba5cb7910d59d9a792c8b8a61c7791f946a005c09e58e"
+    },
+    {
+      "arquivo": "avaliacoes/config/prompt_final.md",
+      "sha256": "b4bfb811a8d13b6cb32d741031e53dd5e5aa4adc0cce553364c719548d6275df"
+    },
+    {
+      "arquivo": "avaliacoes/dados/base_conhecimento_manifesto.json",
+      "sha256": "4f82f09fdba95b6b5a70928dd79306831c6d46b313cf09aaa91a9fc6c557515f"
+    },
+    {
+      "arquivo": "avaliacoes/dados/base_conhecimento_rag.md",
+      "sha256": "8c4b966089e48a51e40095721def298771cd7ac018d61257931173af905d6cc8"
+    },
+    {
+      "arquivo": "avaliacoes/dados/golden_dataset.json",
+      "sha256": "cab6289af6396e828345139316ca88372b1d39d37dc7d7d0b67a4a6b5b7419d8"
+    },
+    {
+      "arquivo": "avaliacoes/dados/redteam/ataques.json",
+      "sha256": "added5940e5587a984f98c4260381860ab0364a53aca0c478ab9bc237d1a3a56"
+    },
+    {
+      "arquivo": "avaliacoes/dados/redteam/controles_benignos.json",
+      "sha256": "14788bd38ec756b7b46c8bdc316207f1a1cffc28463e2a19ba1e828ce507ef48"
+    },
+    {
+      "arquivo": "avaliacoes/dados/redteam/criterios.json",
+      "sha256": "943e9e8176d690fb17cee623a9305e9317a506a507266d0ba174d3d98d06f430"
+    },
+    {
+      "arquivo": "avaliacoes/dados/redteam/mapa_ids.json",
+      "sha256": "82765edfa68c0ec22ea795152d445ff7d6b26beeb03c97f97d06ac3cfd9d16dd"
+    },
+    {
+      "arquivo": "avaliacoes/evidencias_rag.py",
+      "sha256": "11b23c7789fb12ab8e91db9a4fdf95f6c9342aea1f094ab43d075517cecbd8c2"
+    },
+    {
+      "arquivo": "avaliacoes/pytest.ini",
+      "sha256": "cb5a598387e7b7cfc99eea6cf4ad6f5aaa6ef8420e4bc254be1dafa3906a17c8"
+    },
+    {
+      "arquivo": "avaliacoes/README.md",
+      "sha256": "694f6042f0082fee5c07c2403188b3e32e9f78aa165f6e094328ec33cf3047fa"
+    },
+    {
+      "arquivo": "avaliacoes/recuperar_deepeval.py",
+      "sha256": "f39f619c5e829d5f5c93b089c140b770b30b49956199b6719233f63758ad4bb4"
+    },
+    {
+      "arquivo": "avaliacoes/requirements.txt",
+      "sha256": "61f5e209c502f8aaf2ecce508f9f1ff62d91cc4ed260369832fcfc10c83d0af4"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/avaliacao_golden_baseline.json",
+      "sha256": "ba6aadb76d64f8db41d45fe3e56d31777b42c9cffde6c76f691d3286ceeccb77"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/avaliacao_golden_final.json",
+      "sha256": "0a1c3d3f6f041ef201cfc6b85bcb636e00d9c6a833603896dade8f9316882b06"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/avaliacao_redteam_baseline.json",
+      "sha256": "9752a5febfc882a2a08091d7dff0236cd8299414abdcf4d1ba368c4d4aa878d9"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/avaliacao_redteam_final.json",
+      "sha256": "dd70bb41b62a01b98fa99bc75ffa24c851e5fa4e89717204e5abb04b23488a15"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_01_15c5f0fd-e88f-4fec-8096-9c6cd6a52551.jsonl",
+      "sha256": "cce12e5484fcdce7d5985b17852b8b158412de41bf4eb557da6668fe9be1ac29"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_02_b6a8c9ea-a9c7-4ec6-a45d-ba5f041e3563.jsonl",
+      "sha256": "2d0ecc42717be553c9e371c7e6a7df44cfb8bff6f1fb049013cad9ddcf59aeaa"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_03_b68ab39d-8707-4442-8a9a-adf13cf949cb.jsonl",
+      "sha256": "8d8b6d4c493faa8f16700aa46f9da726f2073c534b528613719cd2678f16c480"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_04_e22b4a93-3f9c-4206-bd72-ad932005f0fa.jsonl",
+      "sha256": "05cdadb202d25b376d22f26ac952f40d99c367db48a062ce0237c48071a0a6c7"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_05_d5c81c32-1696-4d88-895b-31882e12e7ec.jsonl",
+      "sha256": "ae9c5c791085edc93745fb61a6333f335245b0b16e4f94d5a82baf5283715210"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_06_ed638fb2-5e15-48e7-9eba-cfece960d45a.jsonl",
+      "sha256": "42e8033e9c8e7053945ad070d28cefea1ce813e89479b941ff338af4bb6798fa"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_07_0edcd79d-4804-4d43-b1cb-266b691a2be6.jsonl",
+      "sha256": "33a6e1dc2f4fc75cfde706022ac4add0bdf2fc1bc58e4ec0334a3807a7989ba8"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_08_34da084c-32d7-4679-a462-33e0223b7783.jsonl",
+      "sha256": "04eb8be723277b05b10dd51a08752fce8669ae0b853d73b2217bd40e93297c2a"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_09_1565bd6d-b4f8-4fd5-8f9b-e74e0070a0d1.jsonl",
+      "sha256": "80b59ca242d29ac277ce6292a28875c1fa596424edebc9dfeeb84d18e92286ee"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_10_e07f4cd6-4249-4a3c-8e54-ec871374d4e8.jsonl",
+      "sha256": "69be655c02639c253e4d1aaf8004138daa94807347b2ce779366b3d8443904aa"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_11_ce64aaa1-4f83-430d-a62d-cf7fb6f7d90e.jsonl",
+      "sha256": "5e17aea2e58a13fd6cac12c602847e38510b94fdf33a0de550e6f267751a1ad1"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_12_9c960dfc-e831-489e-88ad-25c717340e82.jsonl",
+      "sha256": "51c77163c8b4c6df1e5ae9760221ee28eeea63ed1f1cb8bb8d54cc323c6e8367"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_13_04883743-3331-4573-968a-8f2d449ad527.jsonl",
+      "sha256": "13a56effa87ba93a9735f5ffeab242d03fcf5b24ac7e64b0dc5264797e2d6cdf"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_14_9269aca5-79d5-420b-9b51-731399b360e3.jsonl",
+      "sha256": "e9b8497ffacd9d7ce3346a2cf80b572a89c74e84055194014959f6e7f9ab88a4"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_15_5537e7b7-f67e-4a2d-afae-9b8572fc54e9.jsonl",
+      "sha256": "186d5675c82ee39bd2ee21aecc1d1751e0ce1bd9dcc3ba9f03d90f9d0bf02959"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_16_12b1fa9b-5c3c-4ea9-9073-acf2a1d3197e.jsonl",
+      "sha256": "3e7c5a9823e97364d404b55970a66d41f9c3104194fc4b39f5a4909b904ecb04"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_17_552b063d-262e-4698-ada2-387ccc0eef06.jsonl",
+      "sha256": "402e0ce70634d7a22125b64c5e9c936247f7911fc40a73374e306a0db933c76e"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_18_62884a42-cae3-43b5-bb40-029ff7ee0243.jsonl",
+      "sha256": "cc2c49ccf0063fed4a654f6c456920efa5b59bc6628ee0dbe4a9591790e86b9e"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_19_b75c746d-9863-4b6a-863a-d7d9b77b69ef.jsonl",
+      "sha256": "621ce17a05c52631da9529b04db0896e20546aec789d4510df5302005bb33b13"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_20_eea1534a-d689-44e4-888b-7c2e3416b66a.jsonl",
+      "sha256": "083991041f5894236937874dddfd4b67c07298f6185e7a14be956d1f85b2d788"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_21_37e88989-28e6-438e-a8f9-d82c31829016.jsonl",
+      "sha256": "e964f7a1c03ae899c62787201c9bbf76b82854db93c6df9e6b652f9b9a0193fe"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_22_726f69d2-1ae3-458d-a9ae-9b9da81811e6.jsonl",
+      "sha256": "bc9b93cec145bcc3c688f09f6fc95fb9bebaff03c2203aa16d33b54ffb2ca2bd"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_23_09f3df7d-1405-4b26-94f1-9fd42b1140ed.jsonl",
+      "sha256": "5b8fddc2e8f40b33e1304f77015a9409f42ae0cdefd350ff96fbb6fa0937525f"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_24_c3a55a30-ec3a-4b4f-8740-c8858695cb93.jsonl",
+      "sha256": "0efc44bc509aaef796e2f7aaebac3a6d6bd12aacfa96634e275badc5c19e0682"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_25_f4d4cfe9-4363-4605-a763-30ee05892843.jsonl",
+      "sha256": "c5175a10e8fe813137aa9fe04f64d64e88fe09158978885d6493133430bcde13"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_26_5d193ba9-4801-464e-99aa-e604f2541366.jsonl",
+      "sha256": "1003f7266a0eda993a9aa879e2660ef0fb5fb0f54b3b293288a561a8dfa0e0cb"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_27_b0a5e7c5-4251-4383-94a4-aa6fa42530b3.jsonl",
+      "sha256": "fa5a5859ad665fea6b0d18a6010d6c1b1a1170aa21c4fe354fb6ed946b622f7d"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_28_7eabd4a6-4dc6-434f-a779-f1726d3a3094.jsonl",
+      "sha256": "8de3523f96af9526726ccac0d7eb9a138358158c6bfc01ca879d4af2d31f29f0"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_29_44b57587-6e2b-44ae-85c7-46537d0b57f8.jsonl",
+      "sha256": "2bbec67a4b6d102995835bf7fef3e875f37a42e817b01fc9509b98ed50c2caf1"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_30_efbad360-06ee-416c-abb9-3e1a64a09222.jsonl",
+      "sha256": "ea2178d4bb14f4c2a06065831f56413166822d3db5389453131693931da9ad45"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_31_80b007bd-0720-4653-b4c5-e1f7b056b0c5.jsonl",
+      "sha256": "a3664261a2b03ab7131d77d752e7a6ec66ced27390cd88e92dc0fd8d7ad86348"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_32_699ad1bd-18ff-4d75-9cb9-f19933838ab8.jsonl",
+      "sha256": "6039a43d8ed41f9246779f3a11f21d221b4bfa90c1e273659831473cc4f99f0d"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_33_271f44fd-e987-4ac8-915c-7d3d392d5495.jsonl",
+      "sha256": "cedc690b5e7d7240494a189c59951339baa62ecb9402150d468e8204e0a39bd4"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_34_65c4ee63-5743-47a0-9294-5de64a0ab253.jsonl",
+      "sha256": "6fdffba5ba1deb4ee1171dae1105889f8ef19bde8b67b6e1b958012ae3dda4b4"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_baseline_35_28991fb8-b00d-40eb-b632-f595fe0602a1.jsonl",
+      "sha256": "1f65d30d7e22cbd6184fc96374ff0128406798ac4f882b85557d44be3d5a6ad3"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_01_13da18f3-2387-4f4e-a616-8f83a2fbb8ee.jsonl",
+      "sha256": "2939807e4afe7e6fa10e4ba9284ac7a932e87686b2f74adef36240519362da7b"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_02_d82d8068-dc25-4395-a981-c602df66aef4.jsonl",
+      "sha256": "cf98223fc4d3c9388416adef7783c00fbea09eb0357c83f15b633faadad55bc5"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_03_86e7e5d5-2e63-4eb7-83b2-28227d429b2c.jsonl",
+      "sha256": "ecc204976059ca63b3a13492f04d71660dde8c6aeceb7fcd1459f0503b1bfd16"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_04_d9b3712f-1ce9-4a11-99bf-4460eaf4c3bb.jsonl",
+      "sha256": "9f9380a248780d879476a83882943377e608a8ac9e62b2826170d2f5899cfd12"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_05_29dda402-d3d9-42bf-88f8-51c58ab3f31a.jsonl",
+      "sha256": "b655a508b6656c13aefcf496da61f5f3ec639d05728e724c8f6639b248a9af43"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_06_5b953b02-088a-43fd-98c4-0c547c1fb3ad.jsonl",
+      "sha256": "7497fd301013d3d712fa6ee23ebc6f6b5a5aec09bff75c7f643e9b33181953d1"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_07_980c1f91-2371-4d97-be0a-cc57993c772a.jsonl",
+      "sha256": "49174aed481ed5b8d7a309c3cc616e4675ce6e4f28c36e12d6c7675a3ac0bd0c"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_08_5932ed41-b192-4128-b4b9-b8333fc56850.jsonl",
+      "sha256": "d49c6ccab1924702dc418a2d5a54195b9da418f7e318b77b3c102e58a07a5c16"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_09_0068ca9f-40e4-4480-aab3-388f51150252.jsonl",
+      "sha256": "f8a4ebacfba056cf8425867003e681bf51cade283ca16183428674eafd8202f8"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_10_db69838e-415d-44db-b010-679ddbe7c441.jsonl",
+      "sha256": "867d0f3d8486493d368057ff934e0510ff3198c50ffc64d95468b9e25f4d148b"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_11_9b67bb71-ec40-49a8-b314-92cedf914324.jsonl",
+      "sha256": "bc78bb30be3602bdb84c41fde865b787ff37fdc56724fdccaf98e98e4a329575"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_12_437bbdd5-2711-4821-94a7-8a3999035ffd.jsonl",
+      "sha256": "ce36a822be6a9f14505ce3fa5f98be5bc2abc2fbfbbb78046a038a47c1b3334d"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_13_b59495f2-562d-4b53-94f1-b4a22812f9f1.jsonl",
+      "sha256": "b359bcf1952c2a0502be1bc494be65fb782e4c3b9de657bcb92e4bdbdd200b52"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_14_2a5e4eb4-7882-4b66-878d-78189aed30c8.jsonl",
+      "sha256": "30512b3c80215bce574340e5b47850a2f4a113f3473b1bf37c04b61ea76f694c"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_15_f65c1367-f4b3-4e0c-aa2d-ed148b1742c8.jsonl",
+      "sha256": "029d3316188c375ca0be1ce8eb31e5cf68f492f4015b92106919a5f3a1479113"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_16_6bebaff2-4e37-42dc-8617-a83015760c04.jsonl",
+      "sha256": "0caf84472cb6d43da4b35bf2191170cd1e99416c09e9ed13f22f2fddb3032a43"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_17_82594bbd-5e06-4463-88ff-0fdcea33592c.jsonl",
+      "sha256": "175a3dba71e7c16437d7b648c76d12ae14e565f3711d1e09d3a234334ff816e4"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_18_86f47b72-43ee-4d1b-9323-618c08b10e52.jsonl",
+      "sha256": "2cdbaf6b8df9ae0388dfce356585d08da992caf94de82b6706662f6a08d5a0a2"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_19_79548b5a-5122-4f3c-b679-0f2e7a4b973d.jsonl",
+      "sha256": "04a6dbab5afda7c8b79a15b94516e3b1bbca20a246700f53957a9641ac1ab8dc"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_20_6551c094-3afc-4363-a047-90212b894750.jsonl",
+      "sha256": "fea0052e604586cc3b0c1ef43f92f85100127e6d2ad651843b902a016f653342"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_21_bb68f4d7-8266-4463-9c4b-964ffb0686d1.jsonl",
+      "sha256": "a3b77467a40c20ebe6f0a8a2c8da032f46f1e2c7d45d642ce975b479a8c9861a"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_22_d90a8560-8a8b-45a0-a270-c5a17e684eef.jsonl",
+      "sha256": "b1a378590f86d9d5eca12503e95056a14a6bab71521afeb1777df57ce088609e"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_23_f5eb843f-8627-427a-ad23-af6d9fc05845.jsonl",
+      "sha256": "6ff4a07e6cf4cace00c3f41d6fdee2939ca3a60154bc3baf02a06fcfd4e1aa4d"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_24_e098e8ba-be92-4530-a279-fd5cc501ec1a.jsonl",
+      "sha256": "85d0be3fee7b497b98bb88e7dcb715218d1288d5455bcfbe8e4788a059532cb7"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_25_3b0c1369-8a11-4cf1-8474-63198a45a5cd.jsonl",
+      "sha256": "d81e13ea8b7a00d227dc462cf41825e0fe36b81a6eb6dd2af87915ce0b5a5cf6"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_26_39b4d985-ec2e-4c33-b892-572beb2f5061.jsonl",
+      "sha256": "26f9d529f407333222a8844a446cf7684d717d1cd5c2ed53682c2ec92dabae4a"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_27_ce69f4e8-04b6-4efc-9d30-4617cc562c7f.jsonl",
+      "sha256": "6cbf011ff493319c06c1661c2d8fcf500ab2d51f85a4cc91e0ae81cc34799d4a"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_28_09e957a9-8293-4555-ba8b-e10eef1e5d07.jsonl",
+      "sha256": "39b085efd770d8276f058e141b78af50778f7e4822c5859651b48ec773cafbeb"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_29_efb83b56-3cce-4ca8-89cb-c925aaba4fb4.jsonl",
+      "sha256": "e7c810d2361715626084cb8b25e0d18a0d32ba40eb5dd9f69e548fecebf1e7c5"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_30_37e18001-d30e-49e5-bd02-0c72e7dc9aea.jsonl",
+      "sha256": "9d6370699cfbda8384f1b24dc320493351075aa01089c34c0e4f7da54ba2a4a1"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_31_7eac357c-3b26-44a9-bf62-04f960728a50.jsonl",
+      "sha256": "3b3802d3483844e96bc61ef329b707020773b25a1040e83ac946cba59229fe96"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_32_b10ebae7-6c4c-4b14-9135-47de5a47d29f.jsonl",
+      "sha256": "6232c52974b608fd6f0b11db7da7875e739700d0d7500365c25168a1a0fc99c1"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_33_83f039c2-30f3-40ca-89e1-209224f0b881.jsonl",
+      "sha256": "868483baeab325a3630bfb610b02cb6f40587e684a7ceea35acd4810b0056054"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_34_773babcd-cd48-456c-93f5-7e91801699d7.jsonl",
+      "sha256": "7b578780ec30baa22bebb40b0f8e7e7ca728a3ea826984ccbf28a22fe132879b"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/golden_final_35_0e74b955-2b35-4fca-9810-0091abbcaf0d.jsonl",
+      "sha256": "7eaced928c9ba62e8fa895ed81aa8ac38e2fa023f493906249b5dcc5fab3a60e"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/piloto_baseline_P01_fedcc708-9f39-45ab-af73-850461017f44.jsonl",
+      "sha256": "8f75c4d4d39b9fb8d7030f8fb9c459e500c8916be72d847c15957cccb182f54b"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/piloto_baseline_P02_cff6543d-c6e0-4206-a975-357091a5e71a.jsonl",
+      "sha256": "cca95f8249d5af018317c3e5407036218cd18ef0f877f187e6fdee7f767759f6"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/piloto_baseline_P03_d34f44be-ca84-4f9e-9fca-3733d1a2c611.jsonl",
+      "sha256": "7fe74e99b1ef1cc2e6112055eadad7cba93b6c172525ac31078eab64660c6538"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/piloto_baseline_P04_7bdd5595-0a64-4326-918b-837bc3e3358b.jsonl",
+      "sha256": "81523cfdbb8e18686308b0b1a28eaba2a008e3d3cc0e6fd6a3502b0622af112d"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/piloto_baseline_P05_903b55c1-42b1-4920-b4ba-5584e2051296.jsonl",
+      "sha256": "396471cdacb46670ecdea79068abaee7d3a2a706bff83e42ee62b9ced8c7ae31"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT01_0229a07c-9fa9-4a87-b187-35412b73dce2.jsonl",
+      "sha256": "17f16a0f317db418bf11204a3736a66f59df82b41616c1d95ff8984a5b0d60bc"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT02_e42e46c6-2311-464d-a30f-39dc36c323b5.jsonl",
+      "sha256": "1928022ad001007f349a35d656bdd651aca68c1efa39c770c41bc9a8205bda07"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT03_a96780d8-b0a5-4446-ba71-b85cffb7784b.jsonl",
+      "sha256": "3047cd8d256b1e23fde380c3e93c2b897463f67051ae3c057f1466fcc58aa81e"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT04_2840358d-fb17-4042-a3b3-2ac33b857fe7.jsonl",
+      "sha256": "f4a30894daba54b4dd27e223a7e3a4bf384035570c6f916e1208add034136bfe"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT05_14c09ac2-afdc-4ad0-9dc6-2cb004865a97.jsonl",
+      "sha256": "4075daa0d6d09fad85252405c58cfa8ee3127b17d5c18570d333aa616306dfbe"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT06_d13eed96-d5c9-4fec-8e54-09d7c811c5db.jsonl",
+      "sha256": "0ce2555aea574de7beed5f84483579cc9594b539adc8b4a2814c824a0a2f4356"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT07_e9fcd629-01ce-46cb-b269-6b142e01b54e.jsonl",
+      "sha256": "f1196b182a182ae19676a0e91740d2840d5c350f1e737915132438700b0b2394"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT08_a6ce44d1-b42d-4cde-b755-16e3ef6eeea0.jsonl",
+      "sha256": "b5a61829064ae6e19810baa3703ee582885a22aa412a05efd6e32fd287229689"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT09_fd3437a6-b1dd-446b-9b37-a62a84bb56f9.jsonl",
+      "sha256": "9636c74032ae5c185abe3abc69e323f530703bbf954accf349de9bf826a70ccf"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT10_de34ee01-c5a5-4570-8317-dc814a6b391d.jsonl",
+      "sha256": "fa43c114c1a64bf7a585c4214e2f414ada0d915faab76b1544e7aa8720cb2a45"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT11_b64e60af-9bd5-4e9a-8404-87de9caff194.jsonl",
+      "sha256": "d480bc762eaad863f54a818cc59745d8eb6a09f3deb0ed34851226acf35ece72"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT12_4e46e0fc-d013-48c3-b1cc-63f08d562931.jsonl",
+      "sha256": "24a0f4df0169660e7f54fc5b97ee01a5ec144ad0e4912d13c35601f2f6882a07"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT13_c4917199-fb8c-4f39-a037-9d43f16cd205.jsonl",
+      "sha256": "16be368d1a1727136fdd28f0e23434b524606504c7a18cb33ed91d7ce71e1b46"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT14_b401cabf-16ba-424e-b8c4-3a02e207c37a.jsonl",
+      "sha256": "0f14bf2c97a46df6a1fe87f549216b18978be52c531d8b083ed6b93d716c28c1"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_baseline_RT15_83e6678c-9f93-473d-8274-305695212d8c.jsonl",
+      "sha256": "dd73a7928d4a1dd007f700d66651691f6094947a12ce6a3d6a74d3dd6eafe499"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT01_d434ea2e-7c97-417f-959e-caa3b4b74227.jsonl",
+      "sha256": "3c15b1222d3d5c69f672a9532d72d341dd015b973ec66ac26ab88efd51c6041c"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT02_7d58222c-6aa0-48b9-bbf6-28667f33157f.jsonl",
+      "sha256": "89aa414e1d7a99a0393aae6498475b899029d7df969fab2cd1daefed05798592"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT03_0d1073a1-2d95-4f3c-97c3-5b6e7ef62433.jsonl",
+      "sha256": "4ace4d204b86453e9ab8d6bc5ba6ddcb85612dde59676e7093c095384889bd32"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT04_07b7760b-0f6c-46c0-8a4f-e494682b0e5c.jsonl",
+      "sha256": "0e474285b311735aaf7abb8e731ee341f532974e91314546f6deb237a3ef15ca"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT05_65df3c36-1b7e-4b52-b36a-b4c4f1dae86a.jsonl",
+      "sha256": "a901628de6b035423aede6ed2210925186b46f324663abbee0a09d866b27dc99"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT06_d4de82ae-c246-47f7-b190-501dbac3e2de.jsonl",
+      "sha256": "6c2f8e713707ab224555027d0e92d613b1fe124fb0f4aa5f0a6e5359069e5f89"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT07_0783f30e-b8f9-4be0-a093-04e7b62fe6c2.jsonl",
+      "sha256": "9189bc6317820568578d0fb0e3eaf1d2f24f5d52071169a0e5f66c50b20b3807"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT08_97f31eab-4c7d-424a-b57c-2f6ed4a0c872.jsonl",
+      "sha256": "d125864afd9f9d1af20eb31e245a66f4ee59367bf6dbb411b25fce5bad249260"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT09_2368a311-b278-4e71-8378-595ded66d818.jsonl",
+      "sha256": "b074b1fdf1627b5c9c68c7416e5f074f0d072427e3af8c949772cc14d4feb291"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT10_9a74abec-c315-41a5-8ab5-5fd6f975a44a.jsonl",
+      "sha256": "43d5638eacce81260bab4b8faf9c2fced0f609835682101263637c937b9380c2"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT11_0a07c498-8776-48ff-88fe-f5056fde67e0.jsonl",
+      "sha256": "7dea1d513ab6b4cf7a0a4283a2b20199b8dbede8a550c2e49177439d02f80964"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT12_adb23962-f64d-4a4a-ac39-88a62d107ede.jsonl",
+      "sha256": "f7dc5fbeea7ef3a36eb4e21d9f19da4286329cefda9e7c325c7a33e4797dc50e"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT13_e06db21d-b992-4bf5-bde8-fa8a36fc3300.jsonl",
+      "sha256": "9c13ba3e71c71a88acad70e39a1eca2c947cbebfa6fcf3c27cad86b964781a98"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT14_4a4f7a56-f7d8-4e90-b9b0-99b987416c45.jsonl",
+      "sha256": "dff6568d08504ecb9325a3ee474f532a10e075c34d795944b9088663605d14bf"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/eventos/redteam_final_RT15_6aeeb049-ed20-4c0b-a0a3-6555ae8b2a64.jsonl",
+      "sha256": "cc60d3d177c5ae33703a897821eaaee572e0139d21ee06af1c10216bb89df3b4"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/golden_baseline.json",
+      "sha256": "35f7c2c8ae8a352867ddd07a130420af094a7ca5e3099d0add4ca79a9900b5e3"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/golden_baseline.jsonl",
+      "sha256": "8bb6d6928e36d614216f15f0e4a4ff08fdcfa47112e71c6f887ee83ce80a7e6d"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/golden_final.json",
+      "sha256": "7d9ac260521435d7f924e588a6b82f8d5d4398e63f3b556b93d69abacb2fc824"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/golden_final.jsonl",
+      "sha256": "39fa2c0b528457036af67ab83bbf1ed236e68da26eaa1e024ca45fdecae24974"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/piloto_baseline.json",
+      "sha256": "289dcb33536fc5cc94fb567fb94c1952200ae572d81cb4f30ebef4affd8f6f32"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/piloto_baseline.jsonl",
+      "sha256": "dd9c3a83ec778e989b9bd57c2bd1171c978399e226e0ee2bd095841f29867f6b"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/redteam_baseline.json",
+      "sha256": "cb00a8cfe8257f9925d5541625796b3fac7d006b9d89b4720d7bd1e8c1f030d9"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/redteam_baseline.jsonl",
+      "sha256": "5535bfec3a9bb4cac3926e5b680548f72e39e003cd45cf2943d6584293224521"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/redteam_final.json",
+      "sha256": "2cc55da1b6ccfb302dfed2daf3b654e24a6b8b7b24202595feba450d388c1074"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/redteam_final.jsonl",
+      "sha256": "02177d9e718dbfdb76122e9bd1edc887e9c6ce06e973761ffe4482dbeebde046"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/spans_golden_baseline.json",
+      "sha256": "11bf09cb6eae10bfe4f576c5c1d85d2a3baf6269ee511373fdfb36213293f562"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/spans_golden_final.json",
+      "sha256": "d214d2d2723f96e85effb98c9dc09d576dbd4fe4e1ce61279fca51ab1a0e0e87"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/spans_piloto_baseline.json",
+      "sha256": "26fb29979c7626a53e56373cd63d13001928a1c4715c795bae58ccd0a92659f0"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/spans_redteam_baseline.json",
+      "sha256": "6b5fae6ae665aa9124eb2f55f3eb26f1063f72d2a9c6cbfd1de80ae12a5e91ac"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_a/spans_redteam_final.json",
+      "sha256": "29824cc330f6c4ffa2c9a95ccbb514f6d633fa3b852fdc004e6fc3ec4c0063ae"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/golden_baseline.json",
+      "sha256": "7354f1224d23dbd0223aa334d7421e6a4a5b50858e9742b69661ea48749a44d1"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/golden_baseline.jsonl",
+      "sha256": "ce2a7d7fe2426c55e205c751d0bd337d392a7a43c9420998188bcecfb2f4cdaf"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/golden_baseline_recuperacao.json",
+      "sha256": "f0717416f5775e60ba8e2ed26969d23b93174e89172dc2dd739ef6503ad677ea"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/golden_baseline_recuperacao.jsonl",
+      "sha256": "d1f9dbd793528316d25a936ad75cecfd297f9e4d7becb8492ec8b41176a915a6"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/golden_final.json",
+      "sha256": "eb7e631cc71149a087f5c991017c2f6230c778cdb6e6399b85dfadbd14041fc0"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/golden_final.jsonl",
+      "sha256": "c6afe098433be44ad9904d8c3ef9075ec459507aaab8bdf6bcfdb578b26cb7cf"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/golden_final_recuperacao.json",
+      "sha256": "9e99c0a2bacb61f5a6514bb1cb352968494952e7214bbfaf698e2905dde0067f"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/golden_final_recuperacao.jsonl",
+      "sha256": "8e43a453f981124042d3a4de31a120f88f7eb5b386e74c62070456e4fa4f3d95"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/redteam_baseline.json",
+      "sha256": "63d1c05880358a8d5a70f601b1dfd7809247581ec17c5cce632283f5efd65be0"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/redteam_baseline.jsonl",
+      "sha256": "1d4323e5251d0f40496c8db5198240a39b39588dcb5ee987531a6f09a6834bdb"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/redteam_final.json",
+      "sha256": "79ed1df5c55b4f1d0ec42092811ea58b9c4d74e7248d0f7f00155f5d295c4b50"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/frente_b/redteam_final.jsonl",
+      "sha256": "4335149843f42d14ed4a90d28a72085677f2060750a95bf256abfadded9500c6"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/revisao/comparacao_20260925T130832760234Z.csv",
+      "sha256": "b1c124139ec553d14d7dea7363583d835f32681cd0e9891b943eda24843fee89"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/revisao/comparacao_20260925T130832760234Z.json",
+      "sha256": "1df34099e359de9a3126ff22fe140ceeb726ed00954f6c943675922481396afb"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/revisao/CORRECOES.md",
+      "sha256": "0c6b68db2ee823095127a991b6d2293fcfd57307cbf9f7e447e81a6ec08f839d"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/revisao/execucao_final_golden_20260925T022549493747Z.json",
+      "sha256": "8bc4b41b02e1c47061f328b494e27bdb0bcd712be9de4165085ecf71f3eb56dd"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/revisao/execucao_final_redteam_20260925T123203261111Z.json",
+      "sha256": "af0cd604c95ac1609aed8f91fa366dd1a335e4c7c54ff895711f8e13c47c77c3"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/revisao/juiz_contexto_20260924T201515411165Z.json",
+      "sha256": "94caed4aa83bf4c9eb95e56bbdab0f5dc60340056722fe831775c569f9d082bd"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/revisao/piloto_aprovado.json",
+      "sha256": "930da06d9638939e4333519bb1a087a38509e78af073a12fb84ea41d5eb8cc1d"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/revisao/REVISAO_PILOTO_ASSISTENTE.json",
+      "sha256": "82fd6f5f7172af5ffd64c61a63545258e5ceb859c9ef42a3fd6c07f1aab747d4"
+    },
+    {
+      "arquivo": "avaliacoes/resultados/revisao/REVISAO_SPANS_PILOTO.json",
+      "sha256": "9c59b79fb273e4372ed3c7de44f803dd62efc8cb0063fd615016f213e7867481"
+    },
+    {
+      "arquivo": "avaliacoes/resultados_validos.py",
+      "sha256": "33c1e4221cc06eee42b234b349554f006e9134b32a8c538634afc38156f13345"
+    },
+    {
+      "arquivo": "avaliacoes/rodada_final.py",
+      "sha256": "94b4fabdbb73b7e9e3e17e10879f4e6a0198c51af2d26be6be5a962b48347a25"
+    },
+    {
+      "arquivo": "avaliacoes/src/agent_core/executar.py",
+      "sha256": "5fb7aec05dd844a4f1b1f26e21cdf0277cc13937ba960211748a476900185da3"
+    },
+    {
+      "arquivo": "avaliacoes/src/agent_core/exportar_spans.py",
+      "sha256": "bcdfe04be56e77307b8a8ec56397b7a3ac3142d642729a0fa52728d164815300"
+    },
+    {
+      "arquivo": "avaliacoes/src/agent_core/lambda_avaliador.py",
+      "sha256": "74898c160fa8dcc10d71220c6377a88e140c44758fdb5e565ba1150f7a1ad27c"
+    },
+    {
+      "arquivo": "avaliacoes/src/deepeval/casos.py",
+      "sha256": "9400c7d8d67a47b028919bfcd8b304602cf4db7af593b2e1f6bc849e64f93e64"
+    },
+    {
+      "arquivo": "avaliacoes/src/deepeval/dataset.py",
+      "sha256": "41d3e86b80f8796c6eadac487d387295cb7706ca07937f94a63926361c6b2520"
+    },
+    {
+      "arquivo": "avaliacoes/src/deepeval/extracao.py",
+      "sha256": "24cbf14ffa700b479be9fcba9bb3bb3b03f0ecb0b5cebae4aedbfacabce5726f"
+    },
+    {
+      "arquivo": "avaliacoes/src/deepeval/fidelidade.py",
+      "sha256": "1c79240ff1cd21bf0735e43619c0beb8a1df932c197d2a35a57ff377551a4d8e"
+    },
+    {
+      "arquivo": "avaliacoes/src/deepeval/juiz.py",
+      "sha256": "4d4f351eac9c2e259cf7b251d1b1002e292fe0d6ab9a9ffe7cc35dcae813b2f7"
+    },
+    {
+      "arquivo": "avaliacoes/src/deepeval/templates.py",
+      "sha256": "1e393b38e7f58d0c9a79d61b4bf7376131acc2442d0c2b1c94cea1abc63d53f7"
+    },
+    {
+      "arquivo": "avaliacoes/test_qwen.py",
+      "sha256": "1669ff8d0e074bb65282e3deca0c93504d6e0bfa15eb450d3785676ef5af6074"
+    },
+    {
+      "arquivo": "avaliacoes/test_recuperacao_qwen.py",
+      "sha256": "0f8d3599beb44f43f089a96ef87b215e4b2a8e04223c8a44bdaa5afcbc3f91a3"
+    },
+    {
+      "arquivo": "avaliacoes/tests/conftest.py",
+      "sha256": "dd4c1268551cad3ae5cc61dbe85b1d2d5b4d4d583372e97c6a201eee5a6692b2"
+    },
+    {
+      "arquivo": "avaliacoes/tests/test_protocolo.py",
+      "sha256": "929aafa82c369365d6d437139dc9f27cfc46f92cacbdec7528f0f8ca990d8dc7"
+    },
+    {
+      "arquivo": "avaliacoes/tests/test_recuperacao.py",
+      "sha256": "21c2b8eab0f7e7cb1a0ebc775e8b7ea9823c9e1f91bbd3d7ed13f910d6ac334c"
+    },
+    {
+      "arquivo": "avaliacoes/verificar_juiz.py",
+      "sha256": "656effe84ee92b61f4ad8b36ce97a8447a4d72f685217683da0e3bec713cc0c6"
+    },
+    {
+      "arquivo": "entrega_resumida/DEMO_6_MINUTOS.md",
+      "sha256": "218c6871678bdb0a70e9b1ecbc71de007489bafe3420d08a52bae9bc5c9c3171"
+    },
+    {
+      "arquivo": "entrega_resumida/RED_TEAMING_15.csv",
+      "sha256": "ff134d27188f0f432bf5717ed19e7c5bba042d38375b9d7c6e7598ddef9bbe13"
+    },
+    {
+      "arquivo": "entrega_resumida/RELATORIO.md",
+      "sha256": "c2bf7455a720da82f90e7a5eb16d15928035858ece3ef8763d47c6771a1ee46e"
+    },
+    {
+      "arquivo": "entrega_resumida/RELATORIO_FINAL_6_PAGINAS.pdf",
+      "sha256": "cc13eea55d37a48dd6a25dcccae1337cc612d97249850f0ec7d03cb1d46e7310"
+    },
+    {
+      "arquivo": "historico/experimentos_anteriores.zip",
+      "sha256": "229ceb3920580799e3758415c5de5ccd86c86be682db57d1407962d5104c615c"
+    },
+    {
+      "arquivo": "historico/organizacao.json",
+      "sha256": "8d59755fc77a15290ce35e1595ccc8b955e3a7a564ce003fbe6928ff1c144c6a"
+    },
+    {
+      "arquivo": "historico/README.md",
+      "sha256": "5fee18e99e6c8c705c686ad216f6c3a87d52bb9a9acafa8288343ed46fb71559"
+    },
+    {
+      "arquivo": "README.md",
+      "sha256": "dea166123421ea3651656caa42066fa214ba9807bb713adfb079372d4862182a"
+    }
+  ]
+}
