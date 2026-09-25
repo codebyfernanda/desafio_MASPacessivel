@@ -1,19 +1,7 @@
 # ✸ Avaliações do Guia MASP
 
-<div align="center">
-
-[![AWS AgentCore](https://img.shields.io/badge/AWS-AgentCore%20%7C%20sa--east--1-yellow)](https://aws.amazon.com/bedrock/agentcore/)
-![Agente](https://img.shields.io/badge/Agente-Qwen3%20Next%2080B%20A3B-red)
-![Arquitetura](https://img.shields.io/badge/Arquitetura-AgentCore%20%2B%20Gateway%20%2B%20Lambda%20%2B%20S3-blue)
-![Golden Dataset](https://img.shields.io/badge/Golden%20Dataset-35%20casos%20%7C%205%20categorias-yellow)
-![Frente A](https://img.shields.io/badge/AgentCore%20Evaluations-2%20integrados%20%2B%201%20customizado-red)
-![Frente B](https://img.shields.io/badge/DeepEval-3%20m%C3%A9tricas%20%7C%20pytest-blue)
-![Juiz](https://img.shields.io/badge/Juiz%20local-DeepSeek--R1%20%7C%20Ollama-yellow)
-![Red Teaming](https://img.shields.io/badge/Red%20Teaming-15%20ataques-red)
-![Comparação](https://img.shields.io/badge/An%C3%A1lise-Baseline%20%C3%97%20Final-blue)
-![Riscos](https://img.shields.io/badge/Status-Falhas%20remanescentes%20documentadas-yellow)
-
-</div>
+> **Autora:** Fernanda Bastos (@codebyfernanda)
+> **Data de Entrega Consolidada:** 25/09/2026
 
 Esta pasta reúne o código utilizado na campanha de testes e os resultados obtidos nas duas frentes de avaliação. Os dados já foram avaliados, contemplando **35 casos de** ***Golden Dataset*** (sete por categoria) e **15 ataques de** ***Red Teaming***, com a comparação das respostas antes (*baseline*) e depois (final) da correção do *prompt*.
 
