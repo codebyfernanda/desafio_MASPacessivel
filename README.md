@@ -37,6 +37,62 @@ MASP - Entrega organizada/
 
 A árvore mostra os arquivos principais. Os módulos de apoio continuam na pasta de avaliações.
 
+## Arquitetura do Sistema
+
+```mermaid
+flowchart TD
+    Usuario(["Usuário"]) -->|Pergunta| Agente
+
+    subgraph AWS["AWS — sa-east-1"]
+        Agente["Amazon Bedrock AgentCore<br/>Agente: Qwen3 Next 80B A3B"]
+        Sessao["Contexto da sessão<br/>Conversas multi-turno"]
+        Gateway["AgentCore Gateway<br/>Ferramenta RAG_MASP"]
+        Lambda["AWS Lambda<br/>ler-rag-s3-masp"]
+        Base[("Amazon S3<br/>Base de conhecimento do MASP")]
+        Logs["CloudWatch<br/>Spans de execução"]
+
+        Agente <-->|Histórico do caso| Sessao
+        Agente -->|Solicita consulta| Gateway
+        Gateway --> Lambda
+        Lambda -->|Lê documento| Base
+        Base -->|Conteúdo| Lambda
+        Lambda -->|Retorno da ferramenta| Gateway
+        Gateway -->|Fonte para responder| Agente
+        Agente -->|Registros de execução| Logs
+    end
+
+    Agente -->|Resposta| Usuario
+
+    subgraph Campanha["Campanha de QA — baseline e versão final"]
+        Golden[("Golden dataset<br/>35 casos / 5 categorias")]
+        RedTeam[("Red teaming<br/>15 ataques")]
+        Executor["Scripts da campanha"]
+        Capturas[("Capturas<br/>Perguntas, respostas, sessões<br/>e retornos do RAG")]
+
+        Golden --> Executor
+        RedTeam --> Executor
+        Executor -->|Executa os casos| Agente
+        Agente -->|Respostas e eventos| Capturas
+    end
+
+    subgraph Avaliacoes["Avaliação das mesmas interações em duas frentes"]
+        FrenteA["Frente A — AgentCore Evaluations<br/>Builtin.Helpfulness<br/>Builtin.Faithfulness<br/>MaspRegrasDeDominio"]
+        FrenteB["Frente B — DeepEval via pytest<br/>Answer Relevancy ≥ 0,7<br/>Faithfulness ≥ 0,8<br/>G-Eval ≥ 0,8"]
+        Juiz["Juiz local — Ollama<br/>DeepSeek-R1"]
+        Comparacao["Análise baseline × final<br/>Notas, justificativas e vulnerabilidades"]
+        Entrega["Relatório, evidências<br/>e demonstração"]
+
+        Logs -->|Spans das sessões| FrenteA
+        Capturas -->|Mesmas respostas e contexto registrado| FrenteB
+        FrenteB <-->|Avaliação semântica| Juiz
+        FrenteA --> Comparacao
+        FrenteB --> Comparacao
+        Comparacao --> Entrega
+    end
+```
+
+O Qwen3 Next é o agente avaliado nas duas frentes. O DeepSeek-R1 atua como juiz local do DeepEval. Quando não há contexto recuperado registrado, Faithfulness fica não avaliável nessa frente. Os experimentos anteriores com Gemma e Qwen 2.5 permanecem no histórico.
+
 ## O que foi avaliado
 
 O agente é **Qwen3 Next 80B A3B**, executado no AgentCore. A frente A usa Helpfulness, Faithfulness e um avaliador customizado de regras do domínio. A frente B avalia as mesmas respostas com DeepEval e o juiz local **DeepSeek-R1**.
