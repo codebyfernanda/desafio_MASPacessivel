@@ -114,12 +114,3 @@ $env:DEEPEVAL_RETRY_MAX_ATTEMPTS = "1"
 ## ✸ Autoria
 
 Este projeto foi desenvolvido por **Fernanda Bastos dos Santos** ([@codebyfernanda](https://github.com/codebyfernanda?utm_source=gemini)), estudante de Análise e Desenvolvimento de Sistemas no Mackenzie, durante o **ESTÁGIO | AWS AI FDE DRIVEN QUALITY ENGINEERING** na Compass UOL / [AI/R Company](https://aircompany.ai/pt/home/).
-
-```
-
-<ElicitationsGroup message="O código markdown já está completo. Quer adicionar mais alguma coisa?">
-  <Elicitation label="Criar índice (Sumário)" query="Como eu crio um sumário (Table of Contents) no início deste README para facilitar a navegação?"/>
-  <Elicitation label="Revisar texto para o LinkedIn" query="Me ajude a escrever um post para o LinkedIn apresentando este projeto do bootcamp."/>
-</ElicitationsGroup>
-
-```
