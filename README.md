@@ -26,9 +26,7 @@
 
 ## ✸ Sobre o Projeto
 
-<div align="center">
-### *“Como será que a tecnologia pode ajudar pessoas com deficiência a terem um acesso mais adequado à cultura?”*. 
-</div>
+### *“Como será que a tecnologia pode ajudar pessoas com deficiência a terem um acesso mais adequado à cultura?”*
 
 A partir deste questionamento, pude “desenhar” o escopo do desafio descrito abaixo:
 
